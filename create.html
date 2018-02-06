@@ -1,0 +1,235 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar-new {
+    float: left;
+  }
+
+  .navbar-settings {
+    float: right;
+  }
+
+  .dropdown {
+    width: auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+  }
+
+  .main-content-area {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .category-button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .category-button:active {
+    background-color: black;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    height: 42px;
+  }
+
+  td {
+     width: 50%;
+  }
+
+  textarea {
+    width: 100%;
+
+  }
+
+  .back-button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .back-button:active {
+    background-color: black;
+  }
+
+  .forward-button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .forward-button:active {
+    background-color: black;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-new">
+      <a href="#new">	&#x1F3E0;&#xFE0E;</a>
+    </div>
+  <div class="dropdown">
+    <button class="dropbtn">Create New Issue
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Chores with David</a>
+      <a href="#">Food with Rinka</a>
+      <a href="#">Property with Rajiv</a>
+      <a href="#">Create New Issue</a>
+    </div>
+  </div>
+  <div class="navbar-settings">
+    <a href="#settings">&#9881;&#xFE0E;</a>
+  </div>
+</div>
+
+<div class="main-content-area">
+  <h1>Choose Category</h1>
+  <p>Select all that apply</p>
+  <table>
+    <tr>
+      <td><button class="category-button" style="background-color:black">Cleaning</button></td>
+      <td><button class="category-button">Property</button></td>
+    </tr>
+    <tr>
+      <td><button class="category-button">Food</button></td>
+      <td><button class="category-button">??? I forgot this one</button></td>
+    </tr>
+  </table>
+  <h1>Choose Scenario</h1>
+  <p>Select one</p>
+  <table>
+    <tr>
+      <td><button class="category-button">Living Room</button></td>
+      <td><button class="category-button" style="background-color:black">Kitchen</button></td>
+    </tr>
+    <tr>
+      <td><button class="category-button">Bathroom</button></td>
+      <td><button class="category-button">Bedroom</button></td>
+    </tr>
+  </table>
+  <h1>Describe Issue</h1>
+  <textarea name="message" rows="10" cols="30">In a few sentences, describe what is happening.</textarea>
+  <table>
+    <tr>
+      <td><button class="back-button">Cancel</button></td>
+      <td><button class="forward-button">Next</button></td>
+    </tr>
+  </table>
+</body>
+</html>
