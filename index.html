@@ -3,118 +3,17 @@
     <h2>Welcome Back, Matt!</h2>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.navbar {
-    background-color: black;
-    overflow: hidden;
-    font-family: Arial;
-}
-
-.navbar a {
-    float: left;
-    font-size: 14px;
-    color:  white;
-    text-align: center;
-    padding: 14px 16px;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
-.dropdown {
-    font-size: 14px;
-    padding-left: 50px;
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 10px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    font-size: 15px;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.navbar-right {
-    float: right;
-}
-
-.settings {
-    width: 14px;
-    height: 2px;
-    background-color: white;
-    margin: 2px 0;
-}
-
-h3{
-    padding-left: 8px;
-    line-height: 0.2em;
-}
-
-p{
-    line-height: 0.2em;
-    padding-left: 8px;
-    color: grey;
-}
-
-.largePic img{
-    padding-left: 20px;
-    width: 300px;
-}
-
-li{
-    display: inline;
-    padding-right: 10px;
-}
-
-.smallPic img{
-    width: 100px;
-    height: 70px;
-}
-
-</style>
+<link href="homePage.css" rel="stylesheet">
 </head>
 <body>
 
 <div class="navbar">
-  <a href="#">New</a>      
+  <!--For creating new issue-->
+  <a href="#newIssue">New</a>  
+  <!--For current issues hoverbar-->
   <div class="dropdown">
     <button class="dropbtn">Current Issues 
-      <i class="fa fa-caret-down"></i>
+        <i class="fa fa-chevron-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="#">Chores with David</a>
@@ -122,20 +21,30 @@ li{
       <a href="#">Property with Rajiv</a>
     </div>
   </div>
-  <div class="navbar-right">
-    <a href="#">
+
+
+  <div class="dropdown" style="float:right;">
+    <button class="dropbtn">
         <div class="settings"></div>
         <div class="settings"></div>
-         <div class="settings"></div></a>
+        <div class="settings"></div>
+        <i class="fa fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="settings/index.html">Settings</a>
+        <a href="#">Log Out</a>
     </div>
+  </div>
+
 </div>
+
 
 
 <h3>Mood</h3>
 <p>Last 3 Days</p>
     <div class="largePic">
         <a href="#">
-            <img src="rectangle.jpeg" alt="Mood Log" class="img">
+            <img src="images/rectangle.jpeg" alt="Mood Log" class="img">
         </a>
     </div>
     <br />
@@ -146,34 +55,54 @@ li{
     <li>Advice
         <div class="smallPic">
             <a href="#">
-            <img src="rectangle.jpeg" alt="Advice" class="img" width="50" height="40">
+            <img src="images/rectangle.jpeg" alt="Advice" class="img" width="50" height="40">
         </a></div>
     </li>
     <li>History
         <div class="smallPic">
             <a href="#">
-            <img src="rectangle.jpeg" alt="History" class="img" width="50" height="40">
+            <img src="images/rectangle.jpeg" alt="History" class="img" width="50" height="40">
         </a></div>
     </li>
 </ul>
 
 
+<!--
+.smallPic {
+    background-image: url(rectangle.jpeg);
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    color: white;
+}
+<div class="smallPic">
+    <p>Advice</p>
+</div>
+-->
+
+<!--
+<div class="smallBox">
+    <a href="#">
+        <img src="smallerRectangle.jpeg" alt="Advice">
+        <div class="top-left">Advice</div>
+    </a>
+</div>
+
+<div class="smallBox">
+    <a href="#">
+        <img src="smallerRectangle.jpeg" alt="History">
+        <div class="top-left">History</div>
+    </a>
+</div>
+
+-->
 <h3>Additional Questions</h3>
 <p>Lorem Ipsum</p>
     <div class="largePic">
         <a href="#">
-            <img src="rectangle.jpeg" alt="Additional Questions" class="img">
+            <img src="images/rectangle.jpeg" alt="Additional Questions" class="img">
         </a>
     </div>
-
-
-
-
-
-
-
-
-
 
 
 
