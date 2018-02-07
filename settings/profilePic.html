@@ -1,14 +1,40 @@
 <html>
 <head>
 	<title>Change Profile Pic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"">
 <style>
 
 body {
-	background-color: #d4d0c6;
-	font-family: Georgia;
 	text-align: center;
 }
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+}
+
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover{
+    background-color: red;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
 
 img.currentPic {
 	width: 200px;
@@ -20,24 +46,30 @@ img.currentPic {
 	margin: auto;
 }
 
+
 </style>
 </head>
+
+
 <body>
-	<h1>Change Your Profile Picture</h1>
-	<h3>Your current profile picture:</h3>
+	<div class="navbar">
+		<div class="navbar-home">
+  			<a href="../index.html">
+  				<i class="glyphicon glyphicon-home"></i>
+  			</a>
+  		</div>
+	</div>
+	<br />
+	<h3>Change Your Profile Picture</h3>
+	<h4>Your current profile picture:</h4>
 	<img src="../images/tempProfile.jpg" class="currentPic" alt="currentProfilePic"/>
 	<br />
 	<form action="#" method="post">
-		<h3> Upload your new profile picture:</h3>
+		<h4> Upload your new profile picture:</h4>
 
 		<input type="file" id="input" name="profilePic"/>
 		<br />
 		<input type="submit" value="Upload"/>
 	</form>
-
-	<hr />
-	<h3>Home Page</h3>
-	<i class="glyphicon glyphicon-home"></i>
-	<a href="../index.html">Home Page</a>
 </body>
 </html>

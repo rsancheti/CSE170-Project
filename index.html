@@ -1,6 +1,6 @@
 <html>
 <head>
-    <h2>Welcome Back, Matt!</h2>
+    <title>Home Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="homePage.css" rel="stylesheet">
@@ -8,34 +8,30 @@
 <body>
 
 <div class="navbar">
-  <!--For creating new issue-->
-  <a href="#newIssue">New</a>  
-  <!--For current issues hoverbar-->
+  <div class="navbar-new">
+    <a href="create.html">New</a>  
+  </div>
   <div class="dropdown">
     <button class="dropbtn">Current Issues 
         <i class="fa fa-chevron-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Chores with David</a>
-      <a href="#">Food with Rinka</a>
-      <a href="#">Property with Rajiv</a>
+      <a href="oldIssues/david.html">Chores with David</a>
+      <a href="oldIssues/rinka.html">Food with Rinka</a>
+      <a href="oldIssues/rajiv.html">Property with Rajiv</a>
     </div>
   </div>
-
-
-  <div class="dropdown" style="float:right;">
-    <button class="dropbtn">
-        <div class="settings"></div>
-        <div class="settings"></div>
-        <div class="settings"></div>
-        <i class="fa fa-chevron-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a href="settings/index.html">Settings</a>
-        <a href="#">Log Out</a>
+  <div class="navbar-settings">
+    <div class="dropdown">
+        <button class="dropbtn">Settings
+         <i class="fa fa-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="settings/index.html">Settings</a>
+            <a href="#">Log Out</a>
+        </div>
     </div>
   </div>
-
 </div>
 
 
@@ -49,53 +45,30 @@
     </div>
     <br />
 <hr />
+<br/>
+<div class="small-boxes">
+    <table>
+        <tr id="first-row">
+            <td><h3>Advice</h3></td>
+            <td><h3>History</h3></td>
 
-
-<ul>
-    <li>Advice
-        <div class="smallPic">
-            <a href="#">
-            <img src="images/rectangle.jpeg" alt="Advice" class="img" width="50" height="40">
-        </a></div>
-    </li>
-    <li>History
-        <div class="smallPic">
-            <a href="#">
-            <img src="images/rectangle.jpeg" alt="History" class="img" width="50" height="40">
-        </a></div>
-    </li>
-</ul>
-
-
-<!--
-.smallPic {
-    background-image: url(rectangle.jpeg);
-    background-size: cover;
-    width: 160px;
-    height: 160px;
-    color: white;
-}
-<div class="smallPic">
-    <p>Advice</p>
-</div>
--->
-
-<!--
-<div class="smallBox">
-    <a href="#">
-        <img src="smallerRectangle.jpeg" alt="Advice">
-        <div class="top-left">Advice</div>
-    </a>
+            <!--
+            <td><button class="title">History</button></td>
+        -->
+        </tr>
+        <tr>
+            <td><a href="#">
+                <img src="images/Rectangle.jpeg" alt="Advice" class="smallPic"></a></td>
+            <td><a href="#">
+                <img src="images/Rectangle.jpeg" alt="History" class="smallPic"></a></td>  
+        </tr>
+    </table>
 </div>
 
-<div class="smallBox">
-    <a href="#">
-        <img src="smallerRectangle.jpeg" alt="History">
-        <div class="top-left">History</div>
-    </a>
-</div>
 
--->
+<hr />
+
+
 <h3>Additional Questions</h3>
 <p>Lorem Ipsum</p>
     <div class="largePic">
@@ -103,13 +76,6 @@
             <img src="images/rectangle.jpeg" alt="Additional Questions" class="img">
         </a>
     </div>
-
-
-
-
-
-
-
 
 </body>
 </html>
