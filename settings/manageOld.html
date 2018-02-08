@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <title>Manage Old Issues</title>
 
 <style>
@@ -54,7 +54,7 @@ legend{
   padding-left: 5px;
 }
 
-.delete {
+.delete .edit{
   border: 1px solid #dcdcdc;
   color: black;
   border-radius: 3px;
@@ -78,6 +78,11 @@ legend{
         </a>
     </div>
   </div>
+
+    </div>
+    <a href="index.html" class="back-button">
+    <span class="glyphicon glyphicon-menu-left"></span> Back
+  </a>
   <h3>Manage Your Old Issues</h3><br />
   <div class="issues">
     <fieldset id="choresWithDavid">
@@ -85,15 +90,17 @@ legend{
         Chores with David:
       </legend>
       <figure>
+        <h4>Mood Log</h4>
         <img src="../images/Rectangle.jpeg" alt="Mood Log">
         <figcaption><p>
-          <a href="../oldIssues/david.html">Click for more details</a></p>
+          <a href="../mood.html">Click for more details about the issues</a></p>
         </figcaption>
       </figure>
       <button class="delete" style="float: right;">Delete Issue</button>
+      <button class="edit" style="float: center;">Edit Issue</button>
     </fieldset><br />
 
-
+<!--
     <fieldset id="foodWithRinka">
       <legend>
         Food with Rinka:
@@ -121,6 +128,6 @@ legend{
       <button class="delete" style="float: right;">Delete Issue</button>
     </fieldset>
   </div>
-
+-->
 </body>
 </html>
