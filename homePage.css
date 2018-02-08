@@ -72,9 +72,13 @@
     float: left;
   }
 
+  .navbar-left-most{
+    float: left;
+  }
   .navbar-settings {
     float: right;
   }
+
 
   .dropdown {
     width: auto;

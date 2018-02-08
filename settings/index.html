@@ -1,14 +1,62 @@
 <html>
 <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"">
 	<title>Settings</title>
+	<style>
+		.navbar {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+}
+
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover{
+    background-color: red;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+	line-height: 1.8;
+	text-align: center;
+	cursor: pointer;
+	font-size: 20px;
+	border-color: black;
+}
+
+	</style>
 </head>
 <body>
-	<h1>Settings</h1>
+	<div class="navbar">
+    <div class="navbar-home">
+        <a href="../index.html">
+          <i class="glyphicon glyphicon-home"></i>
+        </a>
+    </div>
+  </div>
+
+
+
+
+	<h3>Settings</h3>
 	<hr />
-	<ul>
-		<li><a href="profilePic.html">Change Profile Picture</a></li>
-		<li><a href="updateInfo.html">Update Info</a></li>
-		<li><a href="manageOld.html">Manage Old Issues</a></li>
-	</ul>
+	<p><a href="profilePic.html">Click to Change Profile</a></p>
+	<p><a href="updateInfo.html">Click to Update Info</a></p>
+	<p><a href="manageOld.html">Click to Manage Old Issues</a></p>
 </body>
 </html>
