@@ -40,6 +40,11 @@ p {
 }
 
 	</style>
+    <script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
 </head>
 <body>
 	<div class="navbar">
@@ -52,7 +57,7 @@ p {
 
 
 
-
+      <span><button onclick="goBack()" class="glyphicon glyphicon-menu-left">Back</button></span>
 	<h3>Settings</h3>
 	<hr />
 	<p><a href="profilePic.html">Click to Change Profile</a></p>

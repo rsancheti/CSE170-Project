@@ -5,7 +5,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"">
 <style>
 
-body {
+
+.main-content{
 	text-align: center;
 }
 .back{
@@ -51,6 +52,11 @@ img.currentPic {
 
 
 </style>
+	<script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
 </head>
 
 
@@ -62,12 +68,15 @@ img.currentPic {
   			</a>
   		</div>
 	</div>
+	    	<span><button onclick="goBack()" class="glyphicon glyphicon-menu-left">Back</button></span>
+	<!--
 		<div class="back">
 	  <a href="index.html" class="back-button">
     <span class="glyphicon glyphicon-menu-left"></span> Back
   </a>
-</div>
+-->
 	<br />
+	<div class="main-content">
 	<h3>Change Your Profile Picture</h3>
 	<h4>Your current profile picture:</h4>
 	<img src="../images/tempProfile.jpg" class="currentPic" alt="currentProfilePic"/>
@@ -79,5 +88,6 @@ img.currentPic {
 		<br />
 		<input type="submit" value="Upload"/>
 	</form>
+</div>
 </body>
 </html>

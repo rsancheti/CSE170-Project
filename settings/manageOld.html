@@ -71,6 +71,11 @@ legend{
 }
 
 </style>
+  <script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
 </head>
 
 <body>
@@ -82,11 +87,13 @@ legend{
         </a>
     </div>
   </div>
-
+        <span><button onclick="goBack()" class="glyphicon glyphicon-menu-left">Back</button></span>
+<!--
     </div>
     <a href="index.html" class="back-button">
     <span class="glyphicon glyphicon-menu-left"></span>Back
   </a>
+-->
   <h3>Manage Your Old Issues</h3><br />
   <div class="issues">
     <fieldset id="choresWithDavid">

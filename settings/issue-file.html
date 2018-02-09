@@ -64,6 +64,12 @@
 		height: 200px;
 	}
 	</style>
+
+	<script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
 	</head>
 	<body>
 		<div class="navbar">
@@ -73,8 +79,11 @@
 	        </a>
 	    </div>
 	  </div>
+	  <!--
     	<a href="index.html" class="back-button">
     	<span class="glyphicon glyphicon-menu-left"></span>Back</a>
+    -->
+    	<span><button onclick="goBack()" class="glyphicon glyphicon-menu-left">Back</button></span>
 		<h3>Issue File: Food with David</h3>
 		<div class="content">
 			<h4>Mood Log</h4>

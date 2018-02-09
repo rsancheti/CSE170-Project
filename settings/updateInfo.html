@@ -63,6 +63,11 @@ label{
 }
 
 </style>
+  <script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
 </head>
 
 <body>
@@ -74,11 +79,12 @@ label{
         </a>
     </div>
   </div>
-
+      <span><button onclick="goBack()" class="glyphicon glyphicon-menu-left">Back</button></span>
+<!--
   <a href="index.html" class="back-button">
     <span class="glyphicon glyphicon-menu-left"></span> Back
   </a>
-
+-->
   <h3>Update Your Information</h3><br />
   <form action="" method="get">
     <fieldset id="General">
