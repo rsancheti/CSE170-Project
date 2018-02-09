@@ -86,6 +86,10 @@
     margin-right: 0 auto;
   }
 
+  .active{
+    background-color: #ddd;
+  }
+
 h3{
     padding-left: 8px;
     line-height: 0.2em;
@@ -97,17 +101,20 @@ p{
     color: grey;
 }
 
-.largePic img{
+.mood-log img{
     padding-left: 20px;
     width: 300px;
+    float: center;
 }
 
 .smallPic {
-	width: 130px;
-	height: 90px;
-	padding-left: 20px;
+	width: 170px;
+	height: 170px;
+	/*padding-left: 20px;*/
+  display: block;
+  margin: 0 auto;
 }
 
-.table #first-row{
-	font-size: 16px;
+.images img{
+  margin: 0 auto;
 }
