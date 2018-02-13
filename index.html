@@ -8,11 +8,11 @@
 <body>
   <div class="navbar">
     <div class="navbar-new">
-      <a href="newIssue/index.html">New</a>
+      <a href="newIssue/index.html">+</a>
     </div>
     <div class="navbar-left-most">
       <div class="dropdown">
-        <button class="dropbtn">Chores with David
+        <button class="dropbtn">CHORES WITH DAVID
           <i class="fa fa-chevron-down"></i>
         </button>
         <div class="dropdown-content">
@@ -25,9 +25,7 @@
     </div>
     <div class="navbar-settings">
       <div class="dropdown">
-        <button class="dropbtn">
-          <i class="fa fa-chevron-down"></i>
-        </button>
+        <button class="dropbtn">&#9776;</button>
         <div class="dropdown-content" style="right:0">
           <a href="settings/index.html">Settings</a>
           <a href="log-out.html">Log Out</a>
@@ -35,31 +33,81 @@
       </div>
     </div>
   </div>
-  <h2>Chores with David</h2>
-  <h3>Mood</h3>
-  <p>Last 3 Days</p>
-  <a href='mood.html'>
-    <img src="images/mood.png" alt="Mood Log" class="mood-log">
+
+<div class="main-content-area">
+  <a href="mood.html">
+    <div class="mood">
+      <div class="mood-text-area">
+        <div class="mood-title">RECENT MOOD LOG</div>
+        <div class="mood-current">Happy</div>
+        <div class="mood-suggestion">Keep it up!</div>
+      </div>
+      <div>
+        <img src="images/happyMood.png" alt="Mood Icon" class="mood-icon">
+      </div>
+    </div>
   </a>
-  <hr>
-  <div class="small-boxes">
-    <table align="center">
-      <tr>
-        <div class="images">
-          <td><a href="advice.html">
-            <img src="images/advice.png" alt="Advice" class="smallPic"></a></td>
-            <td><a href="history.html">
-              <img src="images/history.png" alt="History" class="smallPic"></a></td>
-            </div>
-          </tr>
-        </table>
+
+  <div class="advice-content-area">
+    <h1>Advice</h1>
+    <div class="advice">
+      <button class="advice-checkbox">
+      </button>
+    </div>
+    <div class="advice-text-box">
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+      <hr class="between-elements">
+    </div>
+    <div class="advice">
+      <button class="advice-checkbox">
+      </button>
+    </div>
+    <div class="advice-text-box">
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+      <hr class="between-elements">
+    </div>
+    <div class="advice">
+      <button class="advice-checkbox">
+      </button>
+    </div>
+    <div class="advice-text-box">
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+    </div>
+  </div>
+  <hr class="between-sections">
+
+  <div class="question-content-area">
+    <h1>Additional Questions</h1>
+    <div class="question-box">
+      <div class="question-text">What steps have you taken to resolve the issue so far?
       </div>
-      <hr>
-      <h3>Additional Questions</h3>
-      <div class="largePic">
-        <a href="#">
-          <img src="images/Rectangle.jpeg" alt="Additional Questions" class="img">
-        </a>
+      <div class="question-answers">
+        <button class="question-button">directly communicated
+        </button>
+        <button class="question-button">tried communicating
+        </button>
+        <button class="question-button">nothing yet
+        </button>
       </div>
-    </body>
-    </html>
+    </div>
+
+    <div class="final-options">
+      <a href="history.html">
+      <button class="filled-in">History
+      </button>
+    </a>
+      <div></div>
+      <a href="completedTemp.html">
+      <button class="not-filled-in">Mark Issue as Completed
+      </button>
+    </a>
+    </div>
+</div>
+</body>
+</html>
