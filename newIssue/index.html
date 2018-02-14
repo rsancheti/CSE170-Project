@@ -4,31 +4,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="newIssue.css">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09922ce5a032c11c3cb46c0968869f58c58b0878
 </head>
 
 <body>
 <!-- NAVIGATION BAR -->
-  <div class="navbar">
-    <div class="navbar-back">
-        <button class="back"><i class="fa fa-angle-left fa-2x" onclick="goBack()" style="color:white; left:0"></i></button>
-    </div>
-    <div class="navbar-left-most">
-        <a href="">CREATE NEW ISSUE</a>
-    </div>
-    <div class="navbar-settings">
-      <div class="dropdown">
-        <button class="dropbtn">&#9776;</button>
-        <div class="dropdown-content" style="right:0">
-          <a href="settings/index.html">Settings</a>
-          <a href="log-out.html">Log Out</a></div></div>
+<div class="navbar">
+  <div class="navbar-new">
+    <a href="../index.html"><</a>
+  </div>
+  <div class="navbar-left-most">
+    <div class="dropdown">
+      <button class="dropbtn">CREATE NEW ISSUE
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="../index.html" class="active">Chores with David</a>
+        <a href="oldIssues/rinka.html">Food with Rinka</a>
+        <a href="oldIssues/rajiv.html">Property with Rajiv</a>
+        <a href="newIssue/index.html">Create New Issue</a>
+      </div>
     </div>
   </div>
+  <div class="navbar-settings">
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content" style="right:0">
+        <a href="settings/index.html">Settings</a>
+        <a href="log-out.html">Log Out</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- ACTUAL CONTENT BEGIN -->
+<div class="main-content-area">
   <h1>Hi James!</h1>
   <form class="new-issue-setup">
+<<<<<<< HEAD
     <label>What would you like to name this issue?</label><br \>
     <input id ="text" type="text" name="title" required />
     <hr class="between-sections">
@@ -52,26 +69,43 @@
     <label for="description">Write a brief description about how the issue affects you?</label><br \>
     <textarea id="description" placeholder="Title of the issue" required></textarea>
     <hr class="between-sections">
+=======
+    <label>Name this Issue</label><br \>
+    <input id="text-single-line" placeholder=" Food with David"type="text" name="title" required />
+    <hr class="between-elements">
 
+    <label for="category">Select Category</label><br \>
+    <button class="btn" id="food">food</button>
+    <button class="btn" id="cleaning">cleaning</button>
+    <button class="btn" id="personal">personal</button>
+    <hr class="between-elements">
+
+    <label>Select Scenario</label><br \>
+    <div class="radio-button">
+    <input type="radio" name="scenario" value="stealing" class="radio-button">Stealing
+    <input type="radio" name="scenario" value="unsanitary" class="radio-button">Unsanitary
+    </div>
+    <hr class="between-elements">
+>>>>>>> 09922ce5a032c11c3cb46c0968869f58c58b0878
+
+    <label for="description">Describe this Issue</label><br \>
+    <textarea id="text-multi-line" placeholder=" 2-3 sentences" required></textarea>
+    <hr class="between-elements">
 
     <div class="dynamically-change">
-    <label for="length">How long has this issue bothered you?</label><br \>
+    <label for="length">How long has this issue been bothering you?</label><br \>
     <div class="duration">
-    <input type="number" style="width:40px; border-color:#2CB580; border-radius: 8px"/>
+    <input type="number" style="width:40px; border: 1px solid gray; border-radius: 4px; height: 36px"/>
     <select id="unit">
       <option value="day">day(s)</option>
       <option value="week">week(s)</option>
-      <option value="month">month(s)</option>      
+      <option value="month">month(s)</option>
     </select>
   </div>
-    </div>
-    <hr class="between-sections">
-
-
-    <input type="submit" value="Continue" id="save"/>
-
-
+</div>
+    <input class="submit" type="submit" value="Continue" id="save"/>
   </form>
+</div>
 
   <script>
     function goBack(){

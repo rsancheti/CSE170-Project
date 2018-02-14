@@ -48,6 +48,12 @@
     background-color:#F9BBAC;
   }
 
+  .navbar-new:hover {
+    background-color:#F9BBAC;
+    height: 48px;
+  }
+
+
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
