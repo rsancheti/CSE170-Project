@@ -4,17 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="newIssue.css">
-<<<<<<< HEAD
 
-=======
->>>>>>> 09922ce5a032c11c3cb46c0968869f58c58b0878
 </head>
 
 <body>
 <!-- NAVIGATION BAR -->
 <div class="navbar">
   <div class="navbar-new">
-    <a href="../index.html"><</a>
+    <a href="../index.html"><i class="fa fa-angle-left" style="font-size: 25px;;color:white; left:0"></i></a>
   </div>
   <div class="navbar-left-most">
     <div class="dropdown">
@@ -45,7 +42,7 @@
 <div class="main-content-area">
   <h1>Hi James!</h1>
   <form class="new-issue-setup">
-<<<<<<< HEAD
+
     <label>What would you like to name this issue?</label><br \>
     <input id ="text" type="text" name="title" required />
     <hr class="between-sections">
@@ -67,11 +64,11 @@
     <hr class="between-sections">
 
     <label for="description">Write a brief description about how the issue affects you?</label><br \>
-    <textarea id="description" placeholder="Title of the issue" required></textarea>
+    <textarea id="text-multi-line" placeholder="2-3 sentences" required></textarea>
     <hr class="between-sections">
-=======
+<!--
     <label>Name this Issue</label><br \>
-    <input id="text-single-line" placeholder=" Food with David"type="text" name="title" required />
+    <input id="text-single-line" placeholder=" Food with David" type="text" name="title" required />
     <hr class="between-elements">
 
     <label for="category">Select Category</label><br \>
@@ -86,16 +83,17 @@
     <input type="radio" name="scenario" value="unsanitary" class="radio-button">Unsanitary
     </div>
     <hr class="between-elements">
->>>>>>> 09922ce5a032c11c3cb46c0968869f58c58b0878
+
 
     <label for="description">Describe this Issue</label><br \>
     <textarea id="text-multi-line" placeholder=" 2-3 sentences" required></textarea>
     <hr class="between-elements">
+-->
 
     <div class="dynamically-change">
     <label for="length">How long has this issue been bothering you?</label><br \>
     <div class="duration">
-    <input type="number" style="width:40px; border: 1px solid gray; border-radius: 4px; height: 36px"/>
+    <input type="number" id="number" style="width:40px; border: 1px solid grey; border-radius: 4px; height: 36px"/>
     <select id="unit">
       <option value="day">day(s)</option>
       <option value="week">week(s)</option>
