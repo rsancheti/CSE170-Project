@@ -1,86 +1,96 @@
 <html>
 <head>
+  <title>Create New Issue</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
--->
-  <link href="newIssue.css" rel="stylesheet">
+  <link rel="stylesheet" href="createNewIssue.css">
+
 </head>
 
 <body>
+<!-- NAVIGATION BAR -->
   <div class="navbar">
-    <div class="navbar-home">
-
-      <div class="navbar-home">
-    <a href="../index.html">
-          Home
-        </a>
-      </div>
-
-<!--
-        <a href="../index.html">
-          Home
-        </a>
-      -->
+    <div class="navbar-back">
+        <button class="back"><i class="fa fa-angle-left fa-2x" onclick="goBack()" style="color:white; left:0"></i></button>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">Create New Issue<i class="fa fa-chevron-down"></i></button>
-      <div class="dropdown-content">
-        <a href="../settings/issue-file.html">Chores with David</a>
-        <!--<a href="index.html">Create New Issue</a>-->
-      </div>
-  </div>
-  <div class="navbar-settings">
-    <div class="dropdown">
-        <button class="dropbtn">
-         <i class="fa fa-chevron-down"></i>
-        </button>
-          <div class="dropdown-content" style="right:0">
-              <a href="../settings/index.html">Settings</a>
-              <a href="#">Log Out</a>
-        </div>
+    <div class="navbar-left-most">
+        <a href="">CREATE NEW ISSUE</a>
+    </div>
+    <div class="navbar-settings">
+      <div class="dropdown">
+        <button class="dropbtn">&#9776;</button>
+        <div class="dropdown-content" style="right:0">
+          <a href="settings/index.html">Settings</a>
+          <a href="log-out.html">Log Out</a></div></div>
     </div>
   </div>
-</div>
 
-<div class="main-content-area">
-  <h1>Choose Category</h1>
-  <p>Select all that apply</p>
-  <table>
-    <tr>
-      <td><button class="category-button" style="background-color:black">Cleaning</button></td>
-      <td style="width: 16px"></td>
-      <td><button class="category-button">Personal Belongings</button></td>
-    </tr>
-    <tr>
-      <td><button class="category-button">Food</button></td>
-      <td style="width: 16px"></td>
-      <td><button class="category-button">Money</button></td>
-    </tr>
-  </table>
-  <h1>Choose Scenario</h1>
-  <p>Select one</p>
-  <table>
-    <tr>
-      <td><button class="category-button">Living Room</button></td>
-      <td style="width: 16px"></td>
-      <td><button class="category-button" style="background-color:black">Kitchen</button></td>
-    </tr>
-    <tr>
-      <td><button class="category-button">Bathroom</button></td>
-      <td style="width: 16px"></td>
-      <td><button class="category-button">Bedroom</button></td>
-    </tr>
-  </table>
-  <h1>Describe Issue</h1>
-  <textarea name="message" rows="10" cols="30">In a few sentences, describe what is happening.</textarea>
-  <table>
-    <tr>
-      <td><a href="../index.html"><button class="back-button">Cancel</button></a></td>
-      <td style="width: 16px"></td>
-      <td><a href="newIssue2.html"><button class="forward-button">Next</button></a></td>
-    </tr>
-  </table>
+
+<!-- ACTUAL CONTENT BEGIN -->
+  <h1>Hi James!</h1>
+  <form class="new-issue-setup">
+    <label>What would you like to name this issue?</label><br \>
+    <input id ="text" type="text" name="title" required />
+    <hr class="between-sections">
+
+    <label for="category">Which category best represents this issue?</label><br \>
+    <button class="btn" id="food">food</button> 
+    <button class="btn" id="cleaning">cleaning</button><br \>   
+    <button class="btn" id="personal">personal</button><br \>
+    <hr class="between-sections">
+
+
+    <label>Which scenario best describes this issue?</label><br \>
+    <input type="radio" name="scenario" value="stealing">Stealing
+    <input type="radio" name="scenario" value="unsanitary">Unsanitary
+    <hr class="between-sections">
+
+    <label for="description">Write a brief description about how the issue affects you?</label><br \>
+    <textarea id="description" placeholder="Title of the issue" required></textarea>
+    <hr class="between-sections">
+
+
+    <div class="dynamically-change">
+    <label for="length">How long has this issue bothered you?</label><br \>
+    <div class="duration">
+    <input type="number" style="width:40px; border-color:#2CB580; border-radius: 8px"/>
+    <select id="unit">
+      <option value="day">day(s)</option>
+      <option value="week">week(s)</option>
+      <option value="month">month(s)</option>      
+    </select>
+  </div>
+    </div>
+    <hr class="between-sections">
+
+
+    <input type="submit" value="Continue" id="save"/>
+
+
+  </form>
+
+  <script>
+    function goBack(){
+      window.history.back();
+    }
+    function saveData(){
+      localStorage.title = $('#title').val();
+      console.log(localStorage.getItem("title"));
+    }
+
+
+/*
+    function saveData(){
+      console.log($('#title'));
+      var titleVal = $('#title');
+      console.log(titleVal);
+      /*localStorage.setItem("title", "titleVal");
+      localStorage.getItem("title");
+      document.getElementById("check").innerHTML = localStorage.getItem("title");
+    }
+    */
+  </script>
+
+
 </body>
 </html>
