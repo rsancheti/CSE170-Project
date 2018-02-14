@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>History Page</title>
+	<script src="jquery-1.11.0.js"></script>
+</head>
+
+<body>
+	<!--
+		{{#each issues}}
+			<div class="issues">
+				<h3>{{title}}</h3>
+			</div>
+			<hr />
+		{{/each}}
+-->
+
+	<p id="list"></p>
+
+<!--
+	<script>
+		var json = [
+			{
+			"title": "Food with David",
+			"title": "Chores with Rinka"
+			}
+		]
+
+		$(function(){
+			var data = [];
+			$(json).map(function(i, item){
+				data.push('<li>'+item.title+'</li>');
+			});
+			$('#list').append(data);
+		})
+	</script>
+-->
+
+<script>
+		var data = [
+			{
+			"title": "Food with David",
+			"title": "Chores with Rinka"
+			}
+		]
+	$.each(data, function(){
+		var newIssue = $("body").find("#list >div").clone();
+		newIssue.append(this.title);
+	});
+</script>
+
+</body>
+</html>
