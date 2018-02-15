@@ -3,13 +3,19 @@
 	<title>History</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../css/mood-log.css">
+	<link rel="stylesheet" href="../css/moodLog.css">
 </head>
 <body>
+
+    <script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
 <!-- NAVIGATION BAR -->
 <div class="navbar">
   <div class="navbar-new">
-    <a href="../index.html"><i class="fa fa-chevron-left" style="color:white; left:0"></i></a>
+      <i onclick="goBack()" class="fa fa-chevron-left" style="color:white; left: 0; padding-left: 5px; padding-right: 10px; margin-top: 12px"></i>
   </div>
   <div class="navbar-left-most">
     <div class="dropdown">
@@ -28,8 +34,8 @@
     <div class="dropdown">
       <button class="dropbtn">&#9776;</button>
       <div class="dropdown-content" style="right:0">
-        <a href="settings/index.html">Settings</a>
-        <a href="log-out.html">Log Out</a>
+        <a href="/settings">Settings</a>
+        <a href="/logOut">Log Out</a>
       </div>
     </div>
   </div>
@@ -37,19 +43,7 @@
 
 	<div class="container">
 	<h1>History</h1>
-	{{#each moods}}
-	<table>
-		<tr>
-			<th id="col-1"><figure class="pictures">
-				<img src="../images/{{emoji}}" width="60" height="60">
-				<figcaption>{{month}}, {{day}}, 2018</figcaption>
-			</figure></th>
-			<th id="col-2">{{comment}}</th>
-		</tr>
-	</table>
-		<hr class="between-elements">
-	{{/each}}
-</div>
+
 
 
 <div class="main-content-area">
@@ -69,6 +63,7 @@
       <div class="history-entry-subtitle">Length of Issus: 
         <div class="history-entry">{{duration}}</div>
       </div>
+      {{/each}}
       <!--
       <div class="history-entry">Length of Issue</div>
       <div class="history-entry">Relationship with Person</div>

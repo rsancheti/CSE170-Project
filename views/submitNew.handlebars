@@ -1,0 +1,55 @@
+
+    <html>
+<head>
+  <title>Create New Issue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/newIssue.css">
+
+</head>
+    
+<body>
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+  <div class="navbar-left-most">
+    <div class="dropdown">
+      <button class="dropbtn" style="padding-left: 30px">CREATE NEW ISSUE
+      </button>
+      </div>
+    </div>
+
+  <div class="navbar-settings">
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content" style="right:0">
+        <a href="/settings">Settings</a>
+        <a href="/logOut">Log Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ACTUAL CONTENT BEGIN -->
+<div class="main-content-area">
+  <h1>Issue has been recorded. Please return to home.</h1>
+  <table>
+    <tr>
+      <td><a href="/""><button class="submit">Return to Home</button></a></td>
+    </tr>
+  </table>
+
+  <script>
+    function goBack(){
+      window.history.back();
+    }
+    function saveData(){
+      localStorage.title = $('#title').val();
+      console.log(localStorage.getItem("title"));
+    }
+
+  </script>
+
+
+</body>
+</html>
