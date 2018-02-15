@@ -136,6 +136,13 @@ p{
   font-weight: 600;
 }
 
+.history-entry-subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
 .history-entry {
   font-family: Roboto;
   font-size: 16px;

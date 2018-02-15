@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Mood Log</title>
+	<title>History</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/mood-log.css">
@@ -13,7 +13,7 @@
   </div>
   <div class="navbar-left-most">
     <div class="dropdown">
-      <button class="dropbtn">Food With Matt: Mood Log
+      <button class="dropbtn">Chores with David: History
        <!-- <i class="fa fa-chevron-down"></i> -->
       </button><!--
       <div class="dropdown-content">
@@ -36,7 +36,7 @@
 </div>
 
 	<div class="container">
-	<h1>Mood Log</h1>
+	<h1>History</h1>
 	{{#each moods}}
 	<table>
 		<tr>
@@ -49,6 +49,33 @@
 	</table>
 		<hr class="between-elements">
 	{{/each}}
+</div>
+
+
+<div class="main-content-area">
+    <h1>History</h1>
+    {{#each histories}}
+      <div class="history-entry-title">Submitted Issue</div>
+      <div class="history-entry">February 1, 2018</div>
+      <div class="history-entry">9:38 AM</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Scenario and Category</div>
+      <div class="history-entry">{{scenario}}, {{category}}</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Description</div>
+      <div class="history-entry">{{description}}</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Details</div>
+      <div class="history-entry-subtitle">Length of Issus: 
+        <div class="history-entry">{{duration}}</div>
+      </div>
+      <!--
+      <div class="history-entry">Length of Issue</div>
+      <div class="history-entry">Relationship with Person</div>
+      <div class="history-entry">Have you spoken to them?</div>
+      <div class="history-entry">How often does the stealing occur?</div>
+      <div class="history-entry">How much do you value the stolen item(s)?</div>
+    -->
 </div>
 </body>
 </html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Mood Log</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/mood-log.css">
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+  <div class="navbar-new">
+    <a href="../index.html"><i class="fa fa-chevron-left" style="color:white; left:0"></i></a>
+  </div>
+  <div class="navbar-left-most">
+    <div class="dropdown">
+      <button class="dropbtn">Food with Matt: Mood Log
+       <!-- <i class="fa fa-chevron-down"></i> -->
+      </button><!--
+      <div class="dropdown-content">
+        <a href="../index.html" class="active">Chores with David</a>
+        <a href="oldIssues/rinka.html">Food with Rinka</a>
+        <a href="oldIssues/rajiv.html">Property with Rajiv</a>
+        <a href="newIssue/index.html">Create New Issue</a>
+      </div>-->
+  </div>
+    </div>
+  <div class="navbar-settings">
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content" style="right:0">
+        <a href="settings/index.html">Settings</a>
+        <a href="log-out.html">Log Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="container">
+	<h1>Mood Log</h1>
+	{{#each moods}}
+	<table>
+		<tr>
+			<th id="col-1"><figure class="pictures">
+				<img src="../images/{{emoji}}" width="60" height="60">
+				<figcaption>{{month}}, {{day}}, 2018</figcaption>
+			</figure></th>
+			<th id="col-2">{{comment}}</th>
+		</tr>
+	</table>
+		<hr class="between-elements">
+	{{/each}}
+</div>
+</body>
+</html>
