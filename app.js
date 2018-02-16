@@ -55,6 +55,7 @@ app.get('/history', history.view);
 app.get('/createNew', createNew.view);
 app.get('/submitNew', submitNew.view);
 app.get('/settings', settings.view);
+app.get('/updateInfo', updateInfo.view);
 app.get('/logOut', logOut.view);
 app.get('/profilePic', profilePic.view);
 app.get('/daily-entry', dailyEntry.view);
