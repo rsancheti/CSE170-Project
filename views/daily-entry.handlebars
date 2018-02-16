@@ -12,20 +12,13 @@
 		.entry {
 			text-align: center;
 		}
-		h1 {
-			font-size: 18px;
-			font-family: Roboto;
-			padding-top: 30px;
-			padding-bottom: 30px;
-			margin: 0 auto;
-			padding-left: 16px;
-		}
+
 
 
 		#text-multi-line {
 			padding-bottom: 17px;
 			height: 100px;
-			width: 80%;
+			width: 100%;
 			border: 1px solid #9B9B9B;
 		}
 
@@ -38,7 +31,37 @@
 		.top-btn {
 			padding-top: 20px;
 			padding-bottom: 20px;
-			font-size: 15px;
+			font-size: 15px
+		}
+			h1 {
+			  font-family: Roboto;
+			  font-size: 32px;
+			  font-weight: 600;
+			}
+			.final-options {
+			  margin-top: 36px;
+			  margin-bottom: 36px;
+			  text-align: center;
+			}
+
+			.filled-in {
+			  background-color: #33cc99;
+			  height: 48px;
+			  border-radius: 24px;
+			  width: 256px;
+			  border: none;
+			  color: white;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-family: Roboto;
+			  font-size: 16px;
+			  font-weight: 500;
+			  border-radius: 24px;
+			  cursor: pointer;
+			  margin-top: 16px;
+			  margin-bottom: 16px;
+			}
 		}
 	</style>
 </head>
@@ -50,22 +73,23 @@
 </script>
 <body>
 	<button class="top-btn" onclick="goBack()" style="float: left"><- Back</button>
-	<button class="top-btn" style="float: right">Skip -></button>
 
 	<div class="mood">
 		<img class="left" src="./images/Happy.png" alt="happy">
 	</div>
 
-	<h1>Hey James, below can you write in a few sentences why you are feeling this way about the issue today?</h1>
+	<h1>Describe why you're feeling this way</h1>
 
 	<div class="entry">
     <textarea id="text-multi-line" placeholder="2-3 sentences" required></textarea>
 	</div>
 
-	<div class="save">
-	<button><img src="./images/select-mood.png"></button>
+	<div class="final-options">
+		<a href="/homePage">
+		<button class="filled-in">Finish
+		</button>
+	</a>
 	</div>
-
 
 </body>
 </html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Daily Mood Log</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body{
+			text-align: center;
+		}
+		h1 {
+		  font-family: Roboto;
+		  font-size: 32px;
+		  font-weight: 600;
+		}
+
+		button {
+			border: 0px;
+			background-color: white;
+		}
+
+		.left {
+			padding-right: 24px;
+		}
+		.right{
+			padding-left: 24px;
+		}
+		.one-inline{
+			padding-top: 17px;
+			padding-bottom: 17px;
+		}
+		.save{
+			text-align: center;
+			padding-top: 30px;
+		}
+
+			.final-options {
+			  margin-top: 36px;
+			  margin-bottom: 36px;
+			  text-align: center;
+			}
+
+			.filled-in {
+			  background-color: #33cc99;
+			  height: 48px;
+			  border-radius: 24px;
+			  width: 256px;
+			  border: none;
+			  color: white;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-family: Roboto;
+			  font-size: 16px;
+			  font-weight: 500;
+			  border-radius: 24px;
+			  cursor: pointer;
+			  margin-top: 16px;
+			  margin-bottom: 16px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>How are you feeling today?</h1>
+	<button class="button" id="happy"><img class="left" src="../images/Happy.png" alt="happy"></button>
+	<button class="button" id="meh"><img class="right" src="../images/Meh.png" alt="meh"></button><br />
+	<button class="button" id="unhappy"><img class="one-inline" src="../images/Unhappy.png" alt="unhappy"></button><br />
+	<button class="button" id="crying"><img class="left" src="../images/Crying.png" alt="crying"></button>
+	<button class="button" id="angry"><img class="right" src="../images/Angry.png" alt="angry"></button><br />
+	<div class="final-options">
+		<a href="/daily-entry">
+		<button class="filled-in">Next
+		</button>
+	</a>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script>
+  $(document).ready(function(){
+		$(".button").click(function() {
+      $(this).css("background-color","gray");
+    });
+  });
+</script>
+</html>

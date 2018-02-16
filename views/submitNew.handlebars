@@ -7,17 +7,26 @@
   <link rel="stylesheet" href="../css/newIssue.css">
 
 </head>
-    
+
 <body>
 <!-- NAVIGATION BAR -->
 <div class="navbar">
+  <div class="navbar-new">
+    <a href="/createNew" style="font-weight: 600">+</a>
+  </div>
   <div class="navbar-left-most">
     <div class="dropdown">
-      <button class="dropbtn" style="padding-left: 30px">CREATE NEW ISSUE
+      <button class="dropbtn">CREATE NEW ISSUE
+        <i class="fa fa-chevron-down"></i>
       </button>
+      <div class="dropdown-content">
+        <a href="/homePage" class="active">Food with Matt</a><!--
+        <a href="oldIssues/rinka.html">Food with Rinka</a>
+        <a href="oldIssues/rajiv.html">Property with Rajiv</a>
+        <a href="newIssue/index.html">Create New Issue</a>-->
       </div>
     </div>
-
+  </div>
   <div class="navbar-settings">
     <div class="dropdown">
       <button class="dropbtn">&#9776;</button>
@@ -32,12 +41,14 @@
 
 <!-- ACTUAL CONTENT BEGIN -->
 <div class="main-content-area">
-  <h1>Issue has been recorded. Please return to home.</h1>
-  <table>
-    <tr>
-      <td><a href="/""><button class="submit">Return to Home</button></a></td>
-    </tr>
-  </table>
+  <h1 class="submitIssueH1">Your issue has been recorded.</h1>
+  <div class="final-options">
+    <a href="./homePage">
+    <button class="filled-in">See Issue
+    </button>
+  </a>
+  </div>
+</div>
 
   <script>
     function goBack(){

@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var homePage = require('./routes/homePage');
 var createNew = require('./routes/createNew');
 var submitNew = require('./routes/submitNew');
 var moodLog = require('./routes/moodLog');
@@ -17,6 +18,10 @@ var settings = require('./routes/settings');
 var logOut = require('./routes/logOut');
 var profilePic = require('./routes/profilePic');
 var updateInfo = require('./routes/updateInfo');
+var dailyEntry = require('./routes/daily-entry');
+var dailyMood = require('./routes/daily-mood');
+var login = require('./routes/login');
+var signup = require('./routes/signup');
 //var history = require('./routes/history');
 // Example route
 // var user = require('./routes/user');
@@ -44,6 +49,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/homePage', homePage.view);
 app.get('/moodlog', moodLog.view);
 app.get('/history', history.view);
 app.get('/createNew', createNew.view);
@@ -51,7 +57,11 @@ app.get('/submitNew', submitNew.view);
 app.get('/settings', settings.view);
 app.get('/logOut', logOut.view);
 app.get('/profilePic', profilePic.view);
-app.get('/updateInfo', updateInfo.view);
+app.get('/daily-entry', dailyEntry.view);
+app.get('/daily-mood', dailyMood.view);
+app.get('/login', login.view);
+app.get('/signup', signup.view);
+
 //app.get('/', history.view);
 // Example route
 // app.get('/users', user.list);
