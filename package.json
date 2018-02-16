@@ -1,10 +1,10 @@
 {
   "name": "IntroHCI",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "DavidWu, RinkaYoshida, RajivSancheti",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/rsancheti/CSE170-Project"
   },
   "license": "MIT",
   "private": true,
