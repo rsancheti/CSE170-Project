@@ -3,22 +3,24 @@
   <head>
     <meta charset='UTF-8'/>
     <title>Sign Up</title>
-    <link rel='stylesheet' href='../css/login.css'/>
+    <link rel='stylesheet' href='../css/test.css'/>
   </head>
   <body>
 
-    <img src='images/logo.png' width=77 alt='Logo for Common Ground'/>
+    <img id="site-logo" src='images/logo.png' width=77 alt='Logo for Common Ground'/>
 
-    <h1>Log In</h1>
+    <div id="login-text">
+      <h1>Log In</h1>
+    </div>
 
-    <label>Enter Full Name</label><br \>
-    <input id ="text" type="text" name="title" required />
 
-    <label>Enter Username</label><br \>
-    <input id ="text" type="text" name="title" required />
+    <div id="security-key">
+      <form>
+        <input id="username" type="text" id="username" name="firstname" placeholder="Enter Username">
+        <input id="password" type="text" id="password" name="lastname" placeholder="Enter Password">
+      </form>
+    </div>
 
-    <label>Enter Password</label><br \>
-    <input id ="text" type="text" name="title" required />
-    <a href="/daily-mood" class="button"><div class="sign-in">Continue</div></a>
+    <a href="/daily-mood" class="button"><div class="log-in2">Log In</div></a>
   </body>
 </html>
