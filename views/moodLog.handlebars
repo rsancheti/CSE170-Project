@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/moodLog.css">
+  <script src="../routes/moodLog.js"></script>
 </head>
 <body>
 <!-- NAVIGATION BAR -->
@@ -37,7 +38,8 @@
 
 	<div class="container">
 	<h1>Mood Log</h1>
-	{{#each moods}}
+	{{#each issues}}
+  {{#moods}}
 	<table>
 		<tr>
 			<th id="col-1"><figure class="pictures">
@@ -48,6 +50,7 @@
 		</tr>
 	</table>
 		<hr class="between-elements">
+    {{/moods}}
 	{{/each}}
 </div>
 </body>
