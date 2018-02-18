@@ -138,6 +138,25 @@ h3 {
       right: 0;
 }
 
+#backbutton {
+    position: fixed;
+      margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+      top: 551px;
+      left: 32px;
+}
+
+#backtext {
+  font-family: Roboto;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  position: fixed;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    top: 550px;
+    left: 55px;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-family: Roboto;
     color: white;
@@ -159,10 +178,9 @@ h3 {
   box-sizing: border-box; /*very helpful because it counts both the padding and border as part of the width*/
   margin: 20px auto;
   position: fixed;
-    width: 256px;
+    width: 218px;
     height: 48px;
     margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
     top: 537px;
-    left: 0;
-    right: 0;
+    left: 123px;
 }
