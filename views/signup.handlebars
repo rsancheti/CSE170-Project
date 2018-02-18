@@ -3,29 +3,38 @@
   <head>
     <meta charset='UTF-8'/>
     <title>Log In</title>
-    <link rel='stylesheet' href='../css/login.css'/>
+    <link rel='stylesheet' href='../css/welcome.css'/>
   </head>
-  <!--<body>
+  <body>
 
-    <img src='images/logo.png' width=77 alt='Logo for Common Ground'/>
+    <img id="site-logo" src='images/logo.png' width=77 alt='Logo for Common Ground'/>
 
-    <h1>Log In</h1>
+    <div id="login-text">
+      <h1>Sign Up</h1>
+    </div>
 
-    <form><input type="text" name="fname" placeholder="Username"></form>
-    <form><input type="text" name="fname" placeholder="Password"></form>
 
-    <a href="daily-mood.html" class="button"><div class="sign-in">Log In</div></a>
+    <div id="security-key">
+      <form>
+        <input id="username" type="text" id="username" name="firstname" placeholder="Enter Username">
+        <input id="password" type="text" id="password" name="lastname" placeholder="Enter Password">
+        <input id="full-name" type="text" id="password" name="lastname" placeholder="Enter Full Name">
+      </form>
+    </div>
+
+    <div id="choices">
+      <a href="/daily-mood" class="button"><div class="log-in2">Finish</div></a>
+      <a id="backbutton" href="index"><img src='images/backbutton.png' alt="Back Button" width=16.85 height=16.85></a>
+      <a id="backtext" href="index" class="button"><div class="back-login">Back</div></a>
+    </div>
   </body>
-</html> -->
+</html>
 
-<body>
 
-<h1>Sign Up</h1>
+<!-- <h1>Sign Up</h1>
 
 <div>
-    <input type="text" id="fname" name="firstname" placeholder="Enter Username">
 
-    <input type="text" id="lname" name="lastname" placeholder="Enter Password">
 
     <label for="Choose Gender">Choose Gender</label>
     <select id="country" name="country">
@@ -40,4 +49,4 @@
 </div>
 
 </body>
-</html>
+</html> -->

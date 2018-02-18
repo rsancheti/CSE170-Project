@@ -138,9 +138,30 @@ h3 {
       right: 0;
 }
 
+#full-name {
+    /*width: 75%; */
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: fixed;
+      width: 314px;
+      height: 32px;
+      margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+      top: 414px;
+      left: 0;
+      right: 0;
+}
+
 #backbutton {
     position: fixed;
-      margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+      margin: 5% auto;
       top: 551px;
       left: 32px;
 }
@@ -152,10 +173,11 @@ h3 {
   font-weight: bold;
   text-decoration: none;
   position: fixed;
-    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    margin: 5% auto;
     top: 550px;
     left: 55px;
 }
+
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-family: Roboto;
@@ -175,12 +197,12 @@ h3 {
   padding: 20px;
   text-align: center;
   border-radius: 24px;
-  box-sizing: border-box; /*very helpful because it counts both the padding and border as part of the width*/
+  box-sizing: border-box;
   margin: 20px auto;
   position: fixed;
     width: 218px;
     height: 48px;
-    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    margin: 5% auto;
     top: 537px;
     left: 123px;
 }
