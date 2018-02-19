@@ -2,6 +2,8 @@
 <head>
 	<title>Daily Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../js/jquery-1.11.0.js"></script>
+
 
 	<style>
 		.mood {
@@ -9,6 +11,10 @@
 			padding-top: 60px;
 		}
 
+		.pic {
+			width: 110px;
+			height: 110px;
+		}
 		.entry {
 			text-align: center;
 		}
@@ -70,25 +76,48 @@
 	function goBack(){
       window.history.back();
     }
-</script>
-<body>
-	<button class="top-btn" onclick="goBack()" style="float: left"><- Back</button>
 
-	<div class="mood">
-		<img class="left" src="./images/Happy.png" alt="happy">
-	</div>
+  $(document).ready(function(){
+	var moodValue = localStorage.getItem('moods');
+	var image = "../images/" + moodValue;
+	$(".mood").append("<img class='pic' src='" + image +"'/>");;
+  });
+
+  function saveData(){
+  	var data = require('./data.json');	// get the existing JSON file
+  	var moodVal = localStorage.getItem('moods');	// get the previous stored mood value
+  	var commentVal = $("#text-multi-line").val();	// get the daily entry from current page
+  	var today = new Date();	// get the mood log date
+  	var dd = today.getDate();
+  	var mm = today.getMonth()+1;
+  	var objectToAdd = { 	// create an object that has four fileds
+  		"emoji": moodVal,	
+  		"month": mm,
+  		"day": dd,
+  		"comment": commentVal
+  	};
+  	data.moods.push(objectToAdd);	// push the newly created object to existing JSON data file
+  };
+
+</script>
+	
+<body>
+	
+	<button class="top-btn" onclick="goBack()" style="float: left"><- Back</button>
+	<div class="mood"></div>
 
 	<h1>Describe why you're feeling this way</h1>
 
-	<div class="entry">
-    <textarea id="text-multi-line" placeholder="2-3 sentences" required></textarea>
-	</div>
+	<form id="myForm">
+		<div class="entry">
+    		<textarea id="text-multi-line" placeholder="2-3 sentences" required></textarea>
+		</div>
+	</form>
 
 	<div class="final-options">
 		<a href="/homePage">
-		<button class="filled-in">Finish
-		</button>
-	</a>
+		<button class="filled-in" onclick="saveData()">Finish</button>
+		</a>
 	</div>
 
 </body>

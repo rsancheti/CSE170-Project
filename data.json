@@ -1,3 +1,4 @@
+
 {
 	"issues": [
 		{
@@ -37,6 +38,8 @@
 				{
 					"emoji": "Meh.png", "month": "Feb", "day": "08", "comment": "I think it is starting to get resolved, but I am not sure"
 				}
+
+				// !!!!!! Trying to append the new mood log here !!!!!!!
 			]
 		}
 	]

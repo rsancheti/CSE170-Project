@@ -175,6 +175,14 @@ p{
 
 }
 
+.pic{
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 42px;
+  padding-right: 24px;
+  width: 96px;
+}
+
 .mood-log img{
     padding-left: 20px;
     width: 300px;

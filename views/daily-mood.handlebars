@@ -2,6 +2,8 @@
 <head>
 	<title>Daily Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/jquery-1.11.0.js"></script>
+
 
 	<style>
 		body{
@@ -9,7 +11,7 @@
 		}
 		h1 {
 		  font-family: Roboto;
-		  font-size: 32px;
+		  font-size: 30px;
 			letter-spacing: 1.42px;
 			padding-top: 28px;
 		}
@@ -19,15 +21,20 @@
 			background-color: white;
 		}
 
-		.left {
-			padding-right: 24px;
+		label > input {
+			visibility: hidden;
+			position: absolute;
 		}
-		.right{
-			padding-left: 24px;
+
+		label > input + img {
+			cursor: pointer;
+			border: 2px solid transparent;
+			width: 105px;
+			height: 105px;
 		}
-		.one-inline{
-			padding-top: 17px;
-			padding-bottom: 17px;
+
+		label > input:checked + img{ 
+			border: 2px solid #33cc99;
 		}
 		.save{
 			text-align: center;
@@ -63,25 +70,49 @@
 	</style>
 </head>
 <body>
-	<h1>How are you feeling today?</h1>
+	<h1>How are you feeling today about the issue at hand?</h1>
+<!--
 	<button class="button" id="happy"><img class="left" src="../images/Happy.png" alt="happy"></button>
 	<button class="button" id="meh"><img class="right" src="../images/Meh.png" alt="meh"></button><br />
 	<button class="button" id="unhappy"><img class="one-inline" src="../images/Unhappy.png" alt="unhappy"></button><br />
 	<button class="button" id="crying"><img class="left" src="../images/Crying.png" alt="crying"></button>
 	<button class="button" id="angry"><img class="right" src="../images/Angry.png" alt="angry"></button><br />
+-->
+	<form id="myForm">
+	<label>
+		<input type="radio" name="moods" value="Happy.png">
+		<img class="left" style="margin-right: 21px" src="../images/Happy.png">
+	</label>
+	<label>
+		<input type="radio" name="moods" value="Meh.png">
+		<img class="right" style="margin-left: 21px" src="../images/Meh.png">
+	</label><br />
+	<label>
+		<input type="radio" name="moods" value="Unhappy.png">
+		<img class="one-inline" src="../images/Unhappy.png">
+	</label><br />
+	<label>
+		<input type="radio" name="moods" value="Crying.png">
+		<img class="left" style="margin-right: 21px" src="../images/Crying.png">
+	</label>
+	<label>
+		<input type="radio" name="moods" value="Angry.png">
+		<img class="right" style="margin-left: 21px" src="../images/Angry.png">
+	</label>
+</form>
 	<div class="final-options">
 		<a href="/daily-entry">
 		<button class="filled-in">Next
 		</button>
 	</a>
-	</div>
+
 </body>
-<script src="https://code.jquery.com/jquery.js"></script>
+
 <script>
   $(document).ready(function(){
-		$(".button").click(function() {
-      $(this).css("background-color","gray");
-    });
+ $('#myForm input').on('change', function(){
+ 	localStorage.setItem('moods', $('input[name=moods]:checked', '#myForm').val());
+ });
   });
 </script>
 </html>

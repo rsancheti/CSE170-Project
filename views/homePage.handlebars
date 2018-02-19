@@ -43,9 +43,7 @@
         <div class="mood-current">Happy</div>
         <div class="mood-suggestion">Keep it up!</div>
       </div>
-      <div>
-        <img src="images/happyMood.png" alt="Mood Icon" class="mood-icon">
-      </div>
+      <div class="mood-icon"></div>
     </div>
   </a>
 
@@ -132,15 +130,21 @@
     alert("You have marked this issue as completed!");
   }
   $(document).ready(function(){
+    var moodValue = localStorage.getItem('moods');
+    var image = "../images/" + moodValue;
+    $(".mood-icon").append("<img class='pic' src='" + image +"'/>");
+     });
+
     $(".not-filled-in").click(function(){
       $(".completed").hide();
     });
+
     $(".advice-checkbox").click(function() {
       $(this).css({"background-color":"#33cc99", "border-color":"white"});
     });
+
     $(".question-button").click(function() {
       $(this).css({"background-color":"#33cc99", "color":"white"});
     });
-  });
 </script>
 </html>
