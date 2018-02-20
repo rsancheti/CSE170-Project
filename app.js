@@ -50,7 +50,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/homePage', homePage.view);
-app.get('/moodlog', moodLog.view);
+app.get('/moodLog', moodLog.view);
 app.get('/history', history.view);
 app.get('/createNew', createNew.view);
 app.get('/submitNew', submitNew.view);

@@ -84,7 +84,9 @@
   });
 
   function saveData(){
-  	var data = require('./data.json');	// get the existing JSON file
+  	/*
+  	var data = require('./data.json');	// get the existing JSON file*/
+  	const fs = require('fs');
   	var moodVal = localStorage.getItem('moods');	// get the previous stored mood value
   	var commentVal = $("#text-multi-line").val();	// get the daily entry from current page
   	var today = new Date();	// get the mood log date
@@ -96,7 +98,12 @@
   		"day": dd,
   		"comment": commentVal
   	};
-  	data.moods.push(objectToAdd);	// push the newly created object to existing JSON data file
+  	/*data.moods.push(objectToAdd);	// push the newly created object to existing JSON data file*/
+  	fs.writeFileSync('../data.json', JSON.stringify(objectToAdd));
+  	/*
+  	localStorage.setItem('comment', commentVal);
+  	localStorage.setItem('date', dd);
+  	localStorage.setItem('month', mm);*/
   };
 
 </script>

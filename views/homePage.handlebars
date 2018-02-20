@@ -129,10 +129,13 @@
   function pop(){
     alert("You have marked this issue as completed!");
   }
-  $(document).ready(function(){
-    var moodValue = localStorage.getItem('moods');
-    var image = "../images/" + moodValue;
-    $(".mood-icon").append("<img class='pic' src='" + image +"'/>");
+  
+    $(document).ready(function(){
+      var moodValue = localStorage.getItem('moods');
+      var image = "../images/" + moodValue;
+      $(".mood-icon").append("<img class='pic' src='" + image +"'/>");
+      var moodWord = moodValue.substring(0, moodValue.length - 4);
+      $(".mood-current").html(moodWord);
      });
 
     $(".not-filled-in").click(function(){
