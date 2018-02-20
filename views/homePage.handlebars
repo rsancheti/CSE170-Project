@@ -131,8 +131,9 @@
   }
   $(document).ready(function(){
     var moodValue = localStorage.getItem('moods');
-    var image = "../images/" + moodValue;
-    $(".mood-icon").append("<img class='pic' src='" + image +"'/>");
+    var moodValueWithoutPNG = moodValue.replace(".png", "_white.png");
+    var image = "../images/" + moodValueWithoutPNG;
+    $(".mood-icon").append("<img class='pic' src='" + image + "'/>");
      });
 
     $(".not-filled-in").click(function(){
