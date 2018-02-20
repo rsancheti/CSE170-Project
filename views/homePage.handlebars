@@ -129,22 +129,23 @@
   function pop(){
     alert("You have marked this issue as completed!");
   }
-  
+  /*
     $(document).ready(function(){
       var moodValue = localStorage.getItem('moods');
       var image = "../images/" + moodValue;
       $(".mood-icon").append("<img class='pic' src='" + image +"'/>");
       var moodWord = moodValue.substring(0, moodValue.length - 4);
       $(".mood-current").html(moodWord);
+*/
 
-/*
   $(document).ready(function(){
     var moodValue = localStorage.getItem('moods');
     var moodValueWithoutPNG = moodValue.replace(".png", "_white.png");
     var image = "../images/" + moodValueWithoutPNG;
     $(".mood-icon").append("<img class='pic' src='" + image + "'/>");
->>>>>>> 530a2273ab3b8b47d07dc4247ca5ef780d2b36f5
-     });*/
+      var moodWord = moodValue.substring(0, moodValue.length - 4);
+    $(".mood-current").html(moodWord);
+     });
 
     $(".not-filled-in").click(function(){
       $(".completed").hide();
