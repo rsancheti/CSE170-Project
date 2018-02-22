@@ -38,8 +38,7 @@
 
 
 <div class="main-content-area">
-    <h1>History</h1>
-    {{#each issues}}
+    <h1>History: {{title}}</h1>
       <div class="history-entry-title">Submitted Issue</div>
       <div class="history-entry">{{timestamp}}</div>
       <hr class="between-elements">
@@ -57,7 +56,6 @@
       <div class="history-entry"><div class="subtitle">How often does the stealing occur? </div>{{frequency}}</div>
       <div class="history-entry"><div class="subtitle">How much do you value the stolen item(s)? </div>{{value}}</div>
 
-      {{/each}}
       <!--
       <div class="history-entry">Length of Issue</div>
       <div class="history-entry">Relationship with Person</div>

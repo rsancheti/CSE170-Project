@@ -1,5 +1,5 @@
-var data = require('../data.json');
-
 exports.view = function(req, res){
-  res.render('history', data);
+	var data = require('../data.json');
+	var oneData = data['Chores with Rinka'];
+  	res.render('history', oneData);
 };

@@ -3,7 +3,7 @@
 	<title>Daily Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="../js/jquery-1.11.0.js"></script>
-
+<script src="../js/storeMood.js"></script>
 
 	<style>
 		.mood {
@@ -72,41 +72,8 @@
 	</style>
 </head>
 
-<script>
-	function goBack(){
-      window.history.back();
-    }
 
-  $(document).ready(function(){
-	var moodValue = localStorage.getItem('moods');
-	var image = "../images/" + moodValue;
-	$(".mood").append("<img class='pic' src='" + image +"'/>");;
-  });
 
-  function saveData(){
-  	/*
-  	var data = require('./data.json');	// get the existing JSON file*/
-  	const fs = require('fs');
-  	var moodVal = localStorage.getItem('moods');	// get the previous stored mood value
-  	var commentVal = $("#text-multi-line").val();	// get the daily entry from current page
-  	var today = new Date();	// get the mood log date
-  	var dd = today.getDate();
-  	var mm = today.getMonth()+1;
-  	var objectToAdd = { 	// create an object that has four fileds
-  		"emoji": moodVal,	
-  		"month": mm,
-  		"day": dd,
-  		"comment": commentVal
-  	};
-  	/*data.moods.push(objectToAdd);	// push the newly created object to existing JSON data file*/
-  	fs.writeFileSync('../data.json', JSON.stringify(objectToAdd));
-  	/*
-  	localStorage.setItem('comment', commentVal);
-  	localStorage.setItem('date', dd);
-  	localStorage.setItem('month', mm);*/
-  };
-
-</script>
 	
 <body>
 	
@@ -122,9 +89,7 @@
 	</form>
 
 	<div class="final-options">
-		<a href="/homePage">
-		<button class="filled-in" onclick="saveData()">Finish</button>
-		</a>
+		<button class="filled-in" id="finish">Finish</button>
 	</div>
 
 </body>
