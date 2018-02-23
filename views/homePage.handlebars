@@ -152,7 +152,7 @@ for (var i = 0; i < btns.length; i++) {
       var moodWord = moodValue.substring(0, moodValue.length - 4);
     $(".mood-current").html(moodWord);
     var titleVal = localStorage.getItem("newlyCreatedTitle");
-    $("#dropdown-content").append('<button class="issueTitle">' + titleVal + '</button><div></div>');
+    $("#dropdown-content").append('<a href="/newIssue"><button class="issueTitle">' + titleVal + '</button></a><div></div>');
      });
 
 
