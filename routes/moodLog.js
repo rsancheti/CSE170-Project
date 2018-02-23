@@ -3,5 +3,6 @@
 
 exports.view = function(req, res){
 	var data = require('../data.json');
-  res.render('moodLog', data);
+	var oneData = data['Chores with Rinka'];
+  	res.render('moodLog', oneData);
 };

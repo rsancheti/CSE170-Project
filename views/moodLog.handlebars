@@ -3,7 +3,6 @@
 	<title>Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="../routes/moodLog.js"></script>
 	<link rel="stylesheet" href="../css/moodLog.css">
   <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="../js/jquery-1.11.0.js"></script>
@@ -18,9 +17,6 @@
     google.charts.setOnLoadCallback(drawChart);
     function drawChart(){
       
-      $.getJSON('../data.json', function(json){
-        console.log(json.data);
-      })
       var data = google.visualization.arrayToDataTable([
           ['Moods', 'Entry Day'],
           ['Angry', 5],
@@ -69,11 +65,10 @@
 </div>
 
 	<div class="container">
-	<h1>Mood Log</h1>
+	<h1>Mood Log: {{title}}</h1>
 
   <div id="donutchart" style="width: 300px; height: 170px"></div>
 
-	{{#each issues}}
   {{#moods}}
 	<table>
 		<tr>
@@ -86,7 +81,6 @@
 	</table>
 		<hr class="between-elements">
     {{/moods}}
-	{{/each}}
 </div>
 </body>
 </html>

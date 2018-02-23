@@ -271,7 +271,9 @@ body {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-
+input {
+    visibility:hidden;
+}
 .submit {
   background-color: #33cc99;
   height: 48px;

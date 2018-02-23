@@ -49,6 +49,7 @@
 <script>
   $(document).ready(function(){
  $('#myForm input').on('change', function(){
+ 	localStorage.clear();
  	localStorage.setItem('moods', $('input[name=moods]:checked', '#myForm').val());
  });
   });

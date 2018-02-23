@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/newIssue.css">
-
+    <script src="../js/jquery-1.11.0.js"></script>
+<script src="../js/saveNewIssue.js"></script>
 </head>
 
 <body>
@@ -28,14 +29,7 @@
   <div class="navbar-left-most">
     <div class="dropdown">
       <button class="dropbtn">CREATE NEW ISSUE
-        <i class="fa fa-chevron-down"></i>
       </button>
-      <div class="dropdown-content">
-        <a href="/homePage">Food with Matt</a><!--
-        <a href="oldIssues/rinka.html">Food with Rinka</a>
-        <a href="oldIssues/rajiv.html">Property with Rajiv</a>
-        <a href="newIssue/index.html">Create New Issue</a>-->
-      </div>
     </div>
   </div>
   <div class="navbar-settings">
@@ -60,9 +54,9 @@
     <hr class="between-elements">
 
     <label for="category">Which category best represents this issue?</label><br \>
-    <button class="btn" id="food">food</button>
-    <button class="btn" id="cleaning">cleaning</button><br \>
-    <button class="btn" id="personal">personal</button><br \>
+    <input type="radio" name="category" value="food"><button class="btn">food</button>
+    <input type="radio" name="category" value="cleaning"><button class="btn">cleaning</button><br \>
+    <input type="radio" name="category" value="personal"><button class="btn">personal</button><br \>
     <hr class="between-elements">
 
 
@@ -137,17 +131,9 @@
 <!--</form>-->
 <div class="final-options">
   <a href="/submitNew">
-    <button class="submit">Submit New Issue</button>
+    <button class="submit" id="finish">Submit New Issue</button>
   </a>
 </div>
 </div>
-<script src="https://code.jquery.com/jquery.js"></script>
-<script>
-  $(document).ready(function(){
-    $(".btn").click(function() {
-      $(this).css({"background-color":"#33cc99", "color":"white"});
-    });
-  });
-</script>
 </body>
 </html>
