@@ -21,5 +21,11 @@
       <button class="not-filled-in">Log In</button>
     </a>
   </div>
+  <div class="facebookLogin">
+  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+</div>
 </body>
+{{> facebook}}
+<script src="/js/facebook.js"></script>
 </html>
