@@ -142,12 +142,19 @@ var btns = btnContainer.getElementsByClassName("issueTitle");
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
-btns[i].addEventListener("click", function() {
+  // click listener
+  btns[i].addEventListener("click", function() {
+
+  // get the "active" class
   var current = document.getElementsByClassName("active");
+
+  // turn "active" inactive
   current[0].className = current[0].className.replace(" active", "");
+
+  // turn clicked class "active"
   this.className += " active";
 
-  // get the title of corresponding issue
+  // get the title of new "active" class
   var newActive = document.getElementsByClassName(" active");
 
   // .html title (needs [0] because newActive is an array)
