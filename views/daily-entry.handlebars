@@ -3,8 +3,8 @@
 	<title>Daily Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="../js/jquery-1.11.0.js"></script>
-<script src="../js/storeMood.js"></script>
-
+		<script src="../js/storeMood.js"></script>
+		<link href="../css/daily-mood-entry.css" rel="stylesheet">
 	<style>
 		.mood {
 			text-align: center;
@@ -19,8 +19,6 @@
 			text-align: center;
 		}
 
-
-
 		#text-multi-line {
 			padding-bottom: 17px;
 			height: 100px;
@@ -28,56 +26,16 @@
 			border: 1px solid #9B9B9B;
 		}
 
-
 		.save{
 			text-align: center;
 			padding-top: 120px;
 		}
 
-		.top-btn {
-			padding-top: 20px;
-			padding-bottom: 20px;
-			font-size: 15px
-		}
-			h1 {
-			  font-family: Roboto;
-			  font-size: 32px;
-			  font-weight: 600;
-			}
-			.final-options {
-			  margin-top: 36px;
-			  margin-bottom: 36px;
-			  text-align: center;
-			}
-
-			.filled-in {
-			  background-color: #33cc99;
-			  height: 48px;
-			  border-radius: 24px;
-			  width: 256px;
-			  border: none;
-			  color: white;
-			  text-align: center;
-			  text-decoration: none;
-			  display: inline-block;
-			  font-family: Roboto;
-			  font-size: 16px;
-			  font-weight: 500;
-			  border-radius: 24px;
-			  cursor: pointer;
-			  margin-top: 16px;
-			  margin-bottom: 16px;
-			}
-		}
 	</style>
 </head>
 
-
 <body>
-
-	<button class="top-btn" onclick="goBack()" style="float: left"><- Back</button>
 	<div class="mood"></div>
-
 	<h1>Describe why you're feeling this way</h1>
 
 	<form id="myForm">
@@ -86,9 +44,14 @@
 		</div>
 	</form>
 
-	<div class="final-options">
-		<button class="filled-in" id="finish">Finish</button>
+	<div class="navigation-table-container">
+		<table class="navigation-table2">
+			<tr>
+				<td class="back-arrow-section"><a id="backbutton" href="/"><img src='images/backbuttonOrange.png' alt="Back Button" width=16.85 height=16.85></a></td>
+				<td class="back-text-section"><a id="backtext" onclick="goBack()" class="button"><div class="back-login">Back</div></a></td>
+				<td class="finish-section"><a href="/daily-mood" class="filled-in"><div class="log-in2">Finish</div></a></td>
+			</tr>
+		</table>
 	</div>
-
 </body>
 </html>
