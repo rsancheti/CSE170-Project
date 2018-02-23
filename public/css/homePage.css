@@ -199,11 +199,6 @@ p{
     float: center;
 }
 
-.advice {
-  float: left;
-  width: 96px;
-}
-
 .advice-checkbox {
   height: 48px;
   width: 48px;
@@ -211,12 +206,9 @@ p{
   border-radius: 50%;
   margin-right: 24px;
   margin-left: 24px;
+  margin-bottom: 24px;
   background-color: white;
   cursor: pointer;
-}
-
-.advice-checkbox:active {
-  color: green;
 }
 
 .advice-text-box {
@@ -225,10 +217,16 @@ p{
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 24px;
+  position: absolute;
 }
 
 table {
   margin-bottom: 36px;
+  border-collapse: collapse;
+}
+
+table tr {
+  padding-bottom: 24px;
 }
 
 .between-elements {
