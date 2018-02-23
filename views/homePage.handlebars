@@ -19,6 +19,7 @@
         <div id="dropdown-content">
           <button class="issueTitle active">Food with Matt</button>
           <div></div>
+
           <!--
           <a href="oldIssues/rinka.html">Food with Rinka</a>
           <a href="oldIssues/rajiv.html">Property with Rajiv</a>
@@ -121,6 +122,7 @@ for (var i = 0; i < btns.length; i++) {
 
   // get the title of new "active" class
   var newActive = document.getElementsByClassName(" active");
+  localStorage.setItem('selectedIssue', newActive[0].textContent);
 
   // .html title (needs [0] because newActive is an array)
   $(".title-sample").html(newActive[0].textContent);

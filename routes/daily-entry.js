@@ -16,7 +16,7 @@ exports.save = function(req, res){
 	fs.writeFile('./data.json', json, function(err){
 		if (err) throw err;
 		console.log('complete adding new mood');
-	})
+	});
 	/* Get length of the dictionary
 	Object.keys(data).length;
 	*/

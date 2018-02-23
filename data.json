@@ -1,15 +1,12 @@
 {
     "Food with Matt": {
-        "timestamp": "Feb 1, 2018",
         "title": "Food with Matt",
         "category": "Food",
-        "scenario": "Stealing food",
         "description": "Matt has been eating my snacks withough asking me first and it's really frustrating.",
         "duration": "2 weeks",
         "relationship": "Friend",
         "previous-steps": "None",
         "frequency": "Daily",
-        "value": "High",
         "moods": [
             {
                 "emoji": "Happy.png",
@@ -62,16 +59,13 @@
         ]
     },
     "Chores with Rinka": {
-        "timestamp": "Feb 10, 2018",
         "title": "Chores with Rinka",
         "category": "Food",
-        "scenario": "Tired",
         "description": "Just simply tired",
         "duration": "2 weeks",
         "relationship": "Friend",
         "previous-steps": "None",
         "frequency": "Daily",
-        "value": "High",
         "moods": [
             {
                 "emoji": "Unhappy.png",
@@ -120,6 +114,18 @@
                 "month": 2,
                 "day": 22,
                 "comment": "ggggg"
+            },
+            {
+                "emoji": "Angry.png",
+                "month": 2,
+                "day": 22,
+                "comment": "asdf"
+            },
+            {
+                "emoji": "Meh.png",
+                "month": 2,
+                "day": 22,
+                "comment": "whyyyyy"
             }
         ]
     }

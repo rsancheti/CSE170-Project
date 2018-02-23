@@ -65,7 +65,7 @@ app.get('/login', login.view);
 
 
 app.post('/storeMood', dailyEntry.save);
-app.post('/saveNewIssue', createNew.save);
+app.post('/storeIssue', createNew.save);
 
 //app.get('/', history.view);
 // Example route

@@ -13,6 +13,17 @@
 
 
   <script>
+    /*
+  $(document).ready(function(e){
+        var issueVal = localStorage.getItem('selectedIssue');
+        $.post('/loadMood', issueVal, function(data, status){
+        if(data.success){
+        console.log("success");
+      }
+    });
+      });*/
+
+
     google.charts.load("current", {packages:["corechart"]});
     google.charts.setOnLoadCallback(drawChart);
     function drawChart(){
@@ -40,6 +51,7 @@
     function goBack(){
       window.history.back();
     }
+
   </script>
 
 
@@ -50,7 +62,7 @@
   </div>
   <div class="navbar-left-most">
     <div class="dropdown">
-      <button class="dropbtn">Food with Matt: Mood Log</button>
+      <button class="dropbtn">Mood Log</button>
   </div>
     </div>
   <div class="navbar-settings">
