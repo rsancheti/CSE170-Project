@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/newIssue.css">
   <script src="../js/jquery-1.11.0.js"></script>
-  <script src="../js/saveNewIssue.js"></script>
+  <script src="../js/storeIssue.js"></script>
 </head>
 
 <body>
@@ -38,21 +38,70 @@
 <div class="main-content-area">
   <h1>Hi!</h1>
 
-<form id="newIssueForm" action="/saveNewIssue" method="post">
+<form id="newIssueForm">
   <!-- Title Setup -->
     <label for="title">What would you like to name this issue?</label><br \>
-    <!--
-    <input type="text" id="title" name="title"/>-->
     <textarea name="title" id="title"></textarea>
-
     <hr class="between-elements">
 
-  <!-- Category Setup -->
+     <!-- Category Setup-->
     <label for="category">Which category best represents this issue?</label><br \>
-    <input type="radio" name="category" value="food">food
-    <input type="radio" name="category" value="cleaning">cleaning<br \>
-    <input type="radio" name="category" value="personal">personal<br \>
+    <label class="btn">
+    <input type="radio" class="category" value="food">food</label>
+    <label class="btn">
+    <input type="radio" class="category" value="cleaning">cleaning</label><br \>
+    <label class="btn">
+    <input type="radio" class="category" value="personal">personal</label><br \>
     <hr class="between-elements">
+
+      <!-- Description Setup-->
+    <label for="description">Write a brief description about how the issue affects you?</label><br \>
+    <textarea name="description" id="description"></textarea>
+    <hr class="between-elements">
+
+      <!-- Duration Setup-->
+    <label for="duration">How long has this issue been bothering you?</label><br \>
+    <label class="btn">
+    <input type="radio" class="duration" value="days">days</label>
+    <label class="btn">
+    <input type="radio" class="duration" value="weeks">weeks</label>
+    <label class="btn">
+    <input type="radio" class="duration" value="months">months</label>
+    <hr class="between-elements">
+
+     <!-- Relationship Setup-->
+    <label for="relationship">What is your relationship with this person?</label><br \>
+    <label class="btn">
+    <input type="radio" class="relationship" value="dating">dating</label>
+    <label class="btn">
+    <input type="radio" class="relationship" value="friends">friends</label>
+    <label class="btn">
+    <input type="radio" class="relationship" value="acquaintances">acquaintances</label>
+    <hr class="between-elements">
+
+  <!--Step Taken Setup -->
+    <label for="previous-steps">Have you taken any steps to resolve the issue?</label><br \>
+    <label class="btn">
+    <input type="radio" class="previous-steps" value="directly communicated">directly communicated</label><br />
+    <label class="btn">
+    <input type="radio" class="previous-steps" value="tried mentioning it">tried mentioning it</label><br />
+    <label class="btn">
+    <input type="radio" class="previous-steps" value="nothing yet">nothing yet</label>
+    <hr class="between-elements">
+
+
+    <!-- Frequency Setup -->
+    <label for="frequency">How often does this issue happen?</label><br \>
+    <label class="btn">
+    <input type="radio" class="frequency" value="daily">daily</label>
+    <label class="btn">
+    <input type="radio" class="frequency" value="weekly">weekly</label>
+    <label class="btn">
+    <input type="radio" class="frequency" value="monthly">monthly</label>
+</form>
+
+  <button class="submit" id="finish">Submit New Issue</button>
+
 
   <!-- Scenario Setup
     <label for="scenario">Which scenario best describes this issue?</label><br \>
@@ -61,52 +110,8 @@
     <input type="radio" name="scenario" value="stealing">Stealing
     <input type="radio" name="scenario" value="unsanitary">Unsanitary
     <hr class="between-elements">
-  -->
-
-  <!-- Description Setup -->
-    <label for="description">Write a brief description about how the issue affects you?</label><br \>
-    <textarea name="description" id="description"></textarea>
-    <hr class="between-elements">
-
-  <!-- Duration Setup -->
-    <label for="duration">How long has this issue been bothering you?</label><br \>
-    <input type="radio" name="duration" id="days"><button class="btn">days</button>
-    <input type="radio" name="duration" id="weeks"><button class="btn">weeks</button>
-    <input type="radio" name="duration" id="months"><button class="btn">months</button>
-    <hr class="between-elements">
-
-  <!-- Relationship Setup -->
-    <label for="relationship">What is your relationship with this person?</label><br \>
-    <input type="radio" name="relationship" id="dating"><button class="btn">dating</button>
-    <input type="radio" name="relationship" id="friends"><button class="btn">friends</button>
-    <input type="radio" name="relationship" id="acquaintances"><button class="btn">acquaintances</button>
-    <hr class="between-elements">
-
-  <!-- Step Taken Setup -->
-    <label for="previous-steps">Have you taken any steps to resolve the issue?</label><br \>
-    <input type="radio" name="previous-steps" id="directly communicated"><button class="btn">directly communicated</button>
-    <input type="radio" name="previous-steps" id="tried mentioning it"><button class="btn">tried mentioning it</button>
-    <input type="radio" name="previous-steps" id="nothing yet"><button class="btn">nothing yet</button>
-
-<!--
-    <div class="dynamically-change">
-    <label for="length">How long has this issue been bothering you?</label><br \>
-    <div class="duration">
-    <input type="number" id="number" style="width:40px; border: 1px solid grey; border-radius: 4px; height: 36px"/>
-    <select id="unit">
-      <option value="day">day(s)</option>
-      <option value="week">week(s)</option>
-      <option value="month">month(s)</option>
-    </select>
-  </div>
-</div>
+  
 -->
-<!--
-    <input class="submit" type="submit" value="Submit New Issue" id="save"/>
-  -->
-<!--</form>-->
-  <input type="submit" value="submit"><button class="submit" id="finishi">Submit New Issue</button>
-</form>
 
 </div>
 </body>

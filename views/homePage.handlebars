@@ -19,7 +19,7 @@
         <div id="dropdown-content">
           <button class="issueTitle active">Food with Matt</button>
           <div></div>
-          <button class="issueTitle">Property with Rinka</button>
+          <button class="issueTitle">Chores with Rinka</button>
           <div></div>
           <button class="issueTitle">Cleaning with Rajiv</button>
           <!--
@@ -148,6 +148,7 @@ btns[i].addEventListener("click", function() {
 
   // get the title of corresponding issue
   var newActive = document.getElementsByClassName(" active");
+  localStorage.setItem('selectedIssue', newActive[0].textContent);
 
   // .html title (needs [0] because newActive is an array)
   $(".title-sample").html(newActive[0].textContent);
