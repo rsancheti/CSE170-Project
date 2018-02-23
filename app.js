@@ -11,7 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var homePage = require('./routes/homePage');
 var createNew = require('./routes/createNew');
-var submitNew = require('./routes/submitNew');
+var newIssue = require('./routes/newIssue');
 var moodLog = require('./routes/moodLog');
 var history = require('./routes/history');
 var settings = require('./routes/settings');
@@ -53,7 +53,7 @@ app.get('/homePage', homePage.view);
 app.get('/moodLog', moodLog.view);
 app.get('/history', history.view);
 app.get('/createNew', createNew.view);
-app.get('/submitNew', submitNew.view);
+app.get('/newIssue', newIssue.view);
 app.get('/settings', settings.view);
 app.get('/updateInfo', updateInfo.view);
 app.get('/logOut', logOut.view);

@@ -52,7 +52,7 @@ function clickFinish(e){
           console.log("success");
           localStorage.setItem('newlyCreatedTitle', titleVal);
           alert("Your issue has been created and saved to home page!");
-          window.location.href="/homePage";
+          window.location.href="/newIssue";
         }
       });
     }
