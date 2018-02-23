@@ -55,15 +55,15 @@
     <table>
       <tr>
         <td><button class="advice-checkbox"></button></td>
-        <td class="advice-text-box">PLACE HANDLEBAR</td>
+        <td class="advice-text-box">Don't confront Matt immediately. Make sure to not confront Matt until a few more days have passed.</td>
       </tr>
       <tr>
         <td><button class="advice-checkbox"></button></td>
-        <td class="advice-text-box">PLACE HANDLEBAR</td>
+        <td class="advice-text-box">Observe Matt's behavior for a few more days, and mark down any additional stolen food.</td>
       </tr>
       <tr>
         <td><button class="advice-checkbox"></button></td>
-        <td class="advice-text-box">PLACE HANDLEBAR</td>
+        <td class="advice-text-box">After a few days of no additional instances, gently bring up the conversation with Matt.</td>
       </tr>
     </table>
 
@@ -148,6 +148,9 @@ for (var i = 0; i < btns.length; i++) {
       var moodWord = moodValue.substring(0, moodValue.length - 4);
     $(".mood-current").html(moodWord);
      });
+
+     var titleVal = localStorage.getItem("newlyCreatedTitle");
+     $("dropdown-content").append("<button class="issueTitle">"+titleVal+"</button><div></div>");
 
     $(".not-filled-in").click(function(){
       $(".completed").hide();
