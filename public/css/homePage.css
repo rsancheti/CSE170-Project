@@ -17,7 +17,7 @@
     text-decoration: none;
   }
 
-  .navbar #dropdown-content button {
+  .issueTitle {
     float: none;
     color: black;
     font-size: 16px;
@@ -27,6 +27,7 @@
     display: block;
     text-align: left;
 }
+
   /* The dropdown container */
   .dropdown {
     float: left;
@@ -123,7 +124,7 @@
     margin-right: 16px;
   }
 
-h1 {
+.heading  {
   font-family: Roboto;
   font-size: 32px;
   font-weight: 600;
@@ -182,7 +183,6 @@ p{
   padding-bottom: 42px;
   padding-right: 24px;
   width: 96px;
-
 }
 
 .pic{
