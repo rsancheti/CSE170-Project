@@ -8,6 +8,8 @@ exports.view = function(req, res){
 };
 
 exports.save = function(req, res){
+	console.log(req.param('data', null));
+	/*
 	var reqData = JSON.parse(req.param('data', null));
 	var data = require('../data.json');
 	data[Object.keys(data)[Object.keys(data).length-1]].moods.push(reqData);
@@ -17,6 +19,8 @@ exports.save = function(req, res){
 		if (err) throw err;
 		console.log('complete adding new mood');
 	})
+
+	*/
 	/* Get length of the dictionary
 	Object.keys(data).length;
 	*/

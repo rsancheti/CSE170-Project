@@ -7,11 +7,26 @@ function goBack(){
   	$(".btn").click(function() {
       $(this).css({"background-color":"#33cc99", "color":"white"});
     });
+  });
 
+  function submitForm(){
+  	$('#newIssueForm').submit(function(){
+  		var textVal = $('#title').val();
+  		localStorage.setItem('title', textVal);
+  		$.post('/createNew', textVal, function(data, status){
+  			if(data.success){
+  				console.log("success");
+
+  			}
+  		});
+  	})
+  }
+/*
   	$('#finish').click(function(){
   	localStorage.setItem('category', $('input[name="category"]:checked').val());
 
   	});
+  	*/
 /*
 	var moodVal = localStorage.getItem('moods');
 	var image = "../images/" + moodVal;
@@ -41,5 +56,4 @@ function goBack(){
 		});
 	}
 */
-  });
   

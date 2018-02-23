@@ -5,22 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/newIssue.css">
-    <script src="../js/jquery-1.11.0.js"></script>
-<script src="../js/saveNewIssue.js"></script>
+  <script src="../js/jquery-1.11.0.js"></script>
+  <script src="../js/saveNewIssue.js"></script>
 </head>
 
 <body>
 <!-- NAVIGATION BAR -->
-  <script>
-    function goBack(){
-      window.history.back();
-    }
-/*
-    function chooseBtn(e){
-      e.preventDefault();
-      $(this).css("background-color", "#2CB580"; "color", "white");
-    }*/
-  </script>
 
 <div class="navbar">
   <div class="navbar-new">
@@ -47,70 +37,56 @@
 <!-- ACTUAL CONTENT BEGIN -->
 <div class="main-content-area">
   <h1>Hi!</h1>
-  <!--<form class="new-issue-setup">-->
 
-    <label>What would you like to name this issue?</label><br \>
-    <input id="text" type="text" name="title" required />
-    <hr class="between-elements">
-
-    <label for="category">Which category best represents this issue?</label><br \>
-    <input type="radio" name="category" value="food"><button class="btn">food</button>
-    <input type="radio" name="category" value="cleaning"><button class="btn">cleaning</button><br \>
-    <input type="radio" name="category" value="personal"><button class="btn">personal</button><br \>
-    <hr class="between-elements">
-
-
-    <label>Which scenario best describes this issue?</label><br \>
-    <button class="btn" id="stealing">stealing</button>
-    <button class="btn" id="unsanitary">unsanitary</button>
+<form id="newIssueForm" action="/saveNewIssue" method="post">
+  <!-- Title Setup -->
+    <label for="title">What would you like to name this issue?</label><br \>
     <!--
+    <input type="text" id="title" name="title"/>-->
+    <textarea name="title" id="title"></textarea>
+
+    <hr class="between-elements">
+
+  <!-- Category Setup -->
+    <label for="category">Which category best represents this issue?</label><br \>
+    <input type="radio" name="category" value="food">food
+    <input type="radio" name="category" value="cleaning">cleaning<br \>
+    <input type="radio" name="category" value="personal">personal<br \>
+    <hr class="between-elements">
+
+  <!-- Scenario Setup
+    <label for="scenario">Which scenario best describes this issue?</label><br \>
+    <button class="btn">stealing</button>
+    <button class="btn">unsanitary</button>
     <input type="radio" name="scenario" value="stealing">Stealing
     <input type="radio" name="scenario" value="unsanitary">Unsanitary
+    <hr class="between-elements">
   -->
-    <hr class="between-elements">
 
+  <!-- Description Setup -->
     <label for="description">Write a brief description about how the issue affects you?</label><br \>
-    <textarea id="text"required></textarea>
-    <hr class="between-elements">
-<!--
-    <label>Name this Issue</label><br \>
-    <input id="text-single-line" placeholder=" Food with David" type="text" name="title" required />
+    <textarea name="description" id="description"></textarea>
     <hr class="between-elements">
 
-    <label for="category">Select Category</label><br \>
-    <button class="btn" id="food">food</button>
-    <button class="btn" id="cleaning">cleaning</button>
-    <button class="btn" id="personal">personal</button>
+  <!-- Duration Setup -->
+    <label for="duration">How long has this issue been bothering you?</label><br \>
+    <input type="radio" name="duration" id="days"><button class="btn">days</button>
+    <input type="radio" name="duration" id="weeks"><button class="btn">weeks</button>
+    <input type="radio" name="duration" id="months"><button class="btn">months</button>
     <hr class="between-elements">
 
-    <label>Select Scenario</label><br \>
-    <div class="radio-button">
-    <input type="radio" name="scenario" value="stealing" class="radio-button">Stealing
-    <input type="radio" name="scenario" value="unsanitary" class="radio-button">Unsanitary
-    </div>
+  <!-- Relationship Setup -->
+    <label for="relationship">What is your relationship with this person?</label><br \>
+    <input type="radio" name="relationship" id="dating"><button class="btn">dating</button>
+    <input type="radio" name="relationship" id="friends"><button class="btn">friends</button>
+    <input type="radio" name="relationship" id="acquaintances"><button class="btn">acquaintances</button>
     <hr class="between-elements">
 
-
-    <label for="description">Describe this Issue</label><br \>
-    <textarea id="text-multi-line" placeholder=" 2-3 sentences" required></textarea>
-    <hr class="between-elements">
--->
-    <label for="category">How long has this issue been bothering you?</label><br \>
-    <button class="btn"  id="few days">food</button>
-    <button class="btn"  id="weeks">cleaning</button><br \>
-    <button class="btn" id="months">personal</button><br \>
-    <hr class="between-elements">
-
-    <label for="category">What is your relationship with this person?</label><br \>
-    <button class="btn" id="few days">dating</button>
-    <button class="btn" id="weeks">friends</button><br \>
-    <button class="btn" id="months">acquaintances</button><br \>
-    <hr class="between-elements">
-
-    <label for="category">Have you taken any steps to resolve the issue?</label><br \>
-    <button class="btn" id="few days">directly communicated</button>
-    <button class="btn" id="weeks">tried mentioning it</button><br \>
-    <button class="btn" id="months">nothing yet</button><br \>
+  <!-- Step Taken Setup -->
+    <label for="previous-steps">Have you taken any steps to resolve the issue?</label><br \>
+    <input type="radio" name="previous-steps" id="directly communicated"><button class="btn">directly communicated</button>
+    <input type="radio" name="previous-steps" id="tried mentioning it"><button class="btn">tried mentioning it</button>
+    <input type="radio" name="previous-steps" id="nothing yet"><button class="btn">nothing yet</button>
 
 <!--
     <div class="dynamically-change">
@@ -129,11 +105,9 @@
     <input class="submit" type="submit" value="Submit New Issue" id="save"/>
   -->
 <!--</form>-->
-<div class="final-options">
-  <a href="/submitNew">
-    <button class="submit" id="finish">Submit New Issue</button>
-  </a>
-</div>
+  <input type="submit" value="submit"><button class="submit" id="finishi">Submit New Issue</button>
+</form>
+
 </div>
 </body>
 </html>
