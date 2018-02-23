@@ -4,5 +4,7 @@
  */
 
 exports.view = function(req, res){
-  res.render('homePage');
+  var data = require('../data.json');
+  var oneData = data[1];
+  res.render('homePage', data);
 };

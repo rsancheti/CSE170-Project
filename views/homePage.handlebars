@@ -5,8 +5,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="../css/homePage.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery.js"></script>
-
-
 </head>
 <body>
   <div class="navbar">
@@ -15,22 +13,28 @@
     </div>
     <div class="navbar-left-most">
       <div class="dropdown">
-        <button class="dropbtn">FOOD WITH MATT
+        <button class="dropbtn">ISSUES
           <i class="fa fa-chevron-down"></i>
         </button>
-        <div class="dropdown-content">
-          <a href="" id="Food with Matt" class="issueTitle">Food with Matt</a>
-          <a href="" id="Chores with Rinka" class="issueTitle">Chores with Rinka</a><!--
+
+        <div id="dropdown-content">
+          <button class="issueTitle active">Food with Matt</button>
+          <div></div>
+          <button class="issueTitle">Property with Rinka</button>
+          <div></div>
+          <button class="issueTitle">Cleaning with Rajiv</button>
+          <!--
           <a href="oldIssues/rinka.html">Food with Rinka</a>
           <a href="oldIssues/rajiv.html">Property with Rajiv</a>
           <a href="newIssue/index.html">Create New Issue</a>-->
         </div>
+
       </div>
     </div>
     <div class="navbar-settings">
       <div class="dropdown">
         <button class="dropbtn">&#9776;</button>
-        <div class="dropdown-content" style="right:0">
+        <div id="dropdown-content" style="right:0">
           <a href="/settings">Settings</a>
           <a href="/logOut">Log Out</a>
         </div>
@@ -49,6 +53,8 @@
       <div class="mood-icon"></div>
     </div>
   </a>
+
+<div class="title-sample" style="font-size: 40px"></div>
 
   <div class="advice-content-area">
     <h1>Advice</h1>
@@ -128,6 +134,31 @@
 </div>
 </body>
 <script>
+// Get the container element
+var btnContainer = document.getElementById("dropdown-content");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("issueTitle");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+
+  // get the title of corresponding issue
+  var newActive = document.getElementsByClassName(" active");
+
+  // .html title (needs [0] because newActive is an array)
+  $(".title-sample").html(newActive[0].textContent);
+});
+}
+
+
+
+
+
   function pop(){
     alert("You have marked this issue as completed!");
   }
@@ -160,5 +191,7 @@
     $(".question-button").click(function() {
       $(this).css({"background-color":"#33cc99", "color":"white"});
     });
+
+
 </script>
 </html>
