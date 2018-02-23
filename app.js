@@ -61,6 +61,7 @@ app.get('/profilePic', profilePic.view);
 app.get('/daily-mood', dailyMood.view);
 app.get('/daily-entry', dailyEntry.view);
 app.get('/signup', signup.view);
+app.get('/login', login.view);
 
 
 app.post('/storeMood', dailyEntry.save);

@@ -11,7 +11,7 @@ function goBack(){
 
 	$('#finish').click(clickFinish);
 
-	
+
 
 	function clickFinish(e){
 
@@ -34,4 +34,3 @@ function goBack(){
 	}
 
   });
-  
