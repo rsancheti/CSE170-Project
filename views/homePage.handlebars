@@ -19,6 +19,8 @@
         <div id="dropdown-content">
           <button class="issueTitle active">Food with Matt</button>
           <div></div>
+          <button class="issueTitle">Chores with Rinka</button>
+          <div></div>
 
           <!--
           <a href="oldIssues/rinka.html">Food with Rinka</a>
@@ -44,7 +46,7 @@
     <div class="mood">
       <div class="mood-text-area">
         <div class="mood-title">RECENT MOOD LOG</div>
-        <div class="mood-current">Happy</div>
+        <div class="mood-current">No Mood Logged</div>
         <div class="mood-suggestion">Learn More →</div>
       </div>
       <div class="mood-icon"></div>
@@ -149,10 +151,11 @@ for (var i = 0; i < btns.length; i++) {
     $(".mood-icon").append("<img class='pic' src='" + image + "'/>");
       var moodWord = moodValue.substring(0, moodValue.length - 4);
     $(".mood-current").html(moodWord);
+    var titleVal = localStorage.getItem("newlyCreatedTitle");
+    $("#dropdown-content").append('<button class="issueTitle">' + titleVal + '</button><div></div>');
      });
 
-     var titleVal = localStorage.getItem("newlyCreatedTitle");
-     $("dropdown-content").append("<button class="issueTitle">"+titleVal+"</button><div></div>");
+
 
     $(".not-filled-in").click(function(){
       $(".completed").hide();

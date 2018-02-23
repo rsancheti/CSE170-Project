@@ -4,7 +4,7 @@ function goBack(){
     }
 
   $(document).ready(function(e){
-    
+
   	$(".btn").click(function() {
       $(this).css({"background-color":"#33cc99", "color":"white"});
     });
@@ -35,7 +35,7 @@ function clickFinish(e){
       if($("input[type='radio'].frequency").is(':checked')) {
         frequencyVal = $("input[type='radio'].frequency:checked").val();
       }
-      
+
 
       var newIssue = {
         "title": titleVal,
@@ -71,7 +71,7 @@ function clickFinish(e){
 
 	$('#finish').click(clickFinish);
 
-	
+
 
 	function clickFinish(e){
 		e.preventDefault();
@@ -92,4 +92,3 @@ function clickFinish(e){
 		});
 	}
 */
-  
