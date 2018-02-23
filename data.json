@@ -134,25 +134,5 @@
                 "comment": ""
             }
         ]
-    },
-    "hello": {
-        "title": "hello",
-        "category": "food",
-        "description": "bhelo",
-        "duration": "days",
-        "relationship": "dating",
-        "previous-steps": "directly communicated",
-        "frequency": "daily",
-        "moods": []
-    },
-    "Code not working": {
-        "title": "Code not working",
-        "category": "personal",
-        "description": "Sasdddddd",
-        "duration": "days",
-        "relationship": "acquaintances",
-        "previous-steps": "directly communicated",
-        "frequency": "daily",
-        "moods": []
     }
 }
