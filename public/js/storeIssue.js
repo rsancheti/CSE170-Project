@@ -45,7 +45,8 @@ function clickFinish(e){
         "relationship": relationshipVal,
         "previous-steps": stepsVal,
         "frequency": frequencyVal,
-        "moods": []
+        "moods": [],
+        "status": "IN PROGRESS"
       };
       $.post('/storeIssue', {data: JSON.stringify(newIssue)}, function(data, status){
         if(data.success){
