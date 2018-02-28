@@ -205,6 +205,8 @@ body {
   margin-top: 12px;
 }
 #title {
+  font-family: Roboto;
+  font-size: 16px;
   margin-top: 8px;
   width: 100%;
   border-radius: 4px;
@@ -212,6 +214,7 @@ body {
 }
 
 #description {
+  font-family: Roboto;
   height: 96px;
   margin-top: 8px;
   width: 100%;
@@ -221,6 +224,7 @@ body {
 
   #text{
     /*border-radius: 15px 50px 30px;*/
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     border-radius: 5px;
@@ -232,11 +236,6 @@ body {
     margin-bottom: 8px;
 
   }
-
-  input {
-
-  }
-
   .button-container {
     margin-top: 16px;
   }
@@ -306,6 +305,10 @@ body {
 }
 input {
     visibility:hidden;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+
 }
 .submit {
   background-color: #33cc99;
