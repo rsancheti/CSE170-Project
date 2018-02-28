@@ -36,72 +36,111 @@
 
 <!-- ACTUAL CONTENT BEGIN -->
 <div class="main-content-area">
-  <h1>Hi!</h1>
+  <h1>Hey! Let's get started.</h1>
 
 <form id="newIssueForm">
   <!-- Title Setup -->
-    <label for="title">What would you like to name this issue?</label><br \>
+    <label for="title">Name this Issue</label><br \>
     <textarea name="title" id="title"></textarea>
     <hr class="between-elements">
 
      <!-- Category Setup-->
-    <label for="category">Which category best represents this issue?</label><br \>
-    <label class="btn">
-    <input type="radio" class="category" value="food">food</label>
-    <label class="btn">
-    <input type="radio" class="category" value="cleaning">cleaning</label><br \>
-    <label class="btn">
-    <input type="radio" class="category" value="personal">personal</label><br \>
+     <label for="category">Select Category</label><br \>
+     <div class="new-container">
+     <label class="btn">
+       <input type="radio" class="category" value="food">food</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn">
+       <input type="radio" class="category" value="cleaning">cleaning</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn">
+       <input type="radio" class="category" value="personal">personal</label>
+     </label>
+    </div>
     <hr class="between-elements">
 
       <!-- Description Setup-->
-    <label for="description">Write a brief description about how the issue affects you?</label><br \>
+    <label for="description">Describe this Issue</label><br \>
     <textarea name="description" id="description"></textarea>
     <hr class="between-elements">
 
       <!-- Duration Setup-->
-    <label for="duration">How long has this issue been bothering you?</label><br \>
-    <label class="btn">
-    <input type="radio" class="duration" value="days">days</label>
-    <label class="btn">
-    <input type="radio" class="duration" value="weeks">weeks</label>
-    <label class="btn">
-    <input type="radio" class="duration" value="months">months</label>
-    <hr class="between-elements">
+      <label for="category">How long has this Issue been bothering you?</label><br \>
+      <div class="new-container">
+      <label class="btn">
+        <input type="radio" class="duration" value="days">days</label>
+      </label>
+      <div class="separation"></div>
+      <label class="btn">
+        <input type="radio" class="duration" value="weeks">weeks</label>
+      </label>
+      <div class="separation"></div>
+      <label class="btn">
+        <input type="radio" class="duration" value="months">months</label>
+      </label>
+      </div>
+      <hr class="between-elements">
 
      <!-- Relationship Setup-->
-    <label for="relationship">What is your relationship with this person?</label><br \>
-    <label class="btn">
-    <input type="radio" class="relationship" value="dating">dating</label>
-    <label class="btn">
-    <input type="radio" class="relationship" value="friends">friends</label>
-    <label class="btn">
-    <input type="radio" class="relationship" value="acquaintances">acquaintances</label>
-    <hr class="between-elements">
+     <label for="category">Relationship with Person</label><br \>
+     <div class="new-container">
+     <label class="btn">
+       <input type="radio" class="relationship" value="dating">dating</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn">
+       <input type="radio" class="relationship" value="friends">friends</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn">
+       <input type="radio" class="relationship" value="acquaintances">acquaintances</label>
+     </label>
+     </div>
+     <hr class="between-elements">
 
   <!--Step Taken Setup -->
-    <label for="previous-steps">Have you taken any steps to resolve the issue?</label><br \>
-    <label class="btn">
-    <input type="radio" class="previous-steps" value="directly communicated">directly communicated</label><br />
-    <label class="btn">
-    <input type="radio" class="previous-steps" value="tried mentioning it">tried mentioning it</label><br />
-    <label class="btn">
+  <label for="category">Have you taken any steps to resolve this Issue?</label><br \>
+  <div class="new-container">
+  <label class="btn">
+    <input type="radio" class="previous-steps" value="directly communicated">directly communicated</label>
+  </label>
+  <div class="separation"></div>
+  <label class="btn">
+    <input type="radio" class="previous-steps" value="tried mentioning it">tried mentioning it</label>
+  </label>
+  <div class="separation"></div>
+  <label class="btn">
     <input type="radio" class="previous-steps" value="nothing yet">nothing yet</label>
-    <hr class="between-elements">
-
+  </label>
+  </div>
+  <hr class="between-elements">
 
     <!-- Frequency Setup -->
-    <label for="frequency">How often does this issue happen?</label><br \>
+    <label for="category">Have often does this Issue occur?</label><br \>
+    <div class="new-container">
     <label class="btn">
-    <input type="radio" class="frequency" value="daily">daily</label>
+      <input type="radio" class="frequency" value="daily">daily</label>
+    </label>
+    <div class="separation"></div>
     <label class="btn">
-    <input type="radio" class="frequency" value="weekly">weekly</label>
+      <input type="radio" class="frequency" value="weekly">weekly</label>
+    </label>
+    <div class="separation"></div>
     <label class="btn">
-    <input type="radio" class="frequency" value="monthly">monthly</label>
+      <input type="radio" class="frequency" value="monthly">monthly</label>
+    </label>
+    </div>
+
 </form>
 
-  <button class="submit" id="finish">Submit New Issue</button>
-
+  <!--<button class="submit" id="finish" href="/daily-mood">Submit New Issue</button>-->
+  <div class="center-button">
+    <a href="./createNew">
+      <button class="submit" id="finish" href="/daily-mood">Submit New Issue</button>
+    </a>
+  </div>
 
   <!-- Scenario Setup
     <label for="scenario">Which scenario best describes this issue?</label><br \>

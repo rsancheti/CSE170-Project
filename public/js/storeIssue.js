@@ -51,8 +51,8 @@ function clickFinish(e){
         if(data.success){
           console.log("success");
           localStorage.setItem('newlyCreatedTitle', titleVal);
-          alert("Your issue has been created and saved to home page!");
-          window.location.href="/newIssue";
+          //alert("Your issue has been created and saved to home page!");
+          window.location.href="/daily-mood";
         }
       });
     }
