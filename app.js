@@ -70,7 +70,6 @@ app.get('/newHome', newHome.view);
 
 app.post('/storeMood', dailyEntry.save);
 app.post('/storeIssue', createNew.save);
-
 //app.get('/', history.view);
 // Example route
 // app.get('/users', user.list);

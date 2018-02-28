@@ -4,5 +4,7 @@
 
 exports.view = function(req, res){
   var data = require('../data.json');
-  res.render('newHome', data);
+ // console.log(Object.keys(data));
+  //var oneData = data['Food with Matt'];
+  res.render('newHome', {objects: data});
 };
