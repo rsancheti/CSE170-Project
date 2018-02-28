@@ -12,11 +12,12 @@ function statusChangeCallback(response) {
   // Full docs on the response object can be found in the documentation
   // for FB.getLoginStatus().
   if (response.status === 'connected') {
+    window.location.href = "/homePage";
     // Logged into your app and Facebook.
         console.log('Successfully logged in with Facebook');
          FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
   }
 }
 function changeUser(response) {
-  alert("Successfully logged in with Facebook! Please click Log In to continue.");
+  
 }
