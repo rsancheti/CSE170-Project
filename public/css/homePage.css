@@ -95,8 +95,21 @@
     display: block;
   }
 
+  .navbar-title {
+    font-family: Roboto;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-left: 8px;
+    float: left;
+    color: white;
+
+  }
+
   .navbar-new {
     float: left;
+    margin-left: 8px;
+    margin-top: 14px;
+    margin-right: 8px;
   }
 
   .navbar-left-most{
