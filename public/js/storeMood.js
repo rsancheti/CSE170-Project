@@ -24,12 +24,13 @@ function goBack(){
 			"day": today.getDate(),
 			"comment": commentVal
 		};
-		console.log(newMood);
 		$.post('/storeMood', {data: JSON.stringify(newMood)}, function(data, status){
-			if(data.success){
+			    if(data.success){
+
 				console.log("success");
 				window.location.href="/homePage";
 			}
+			
 		});
 	}
 
