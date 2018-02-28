@@ -3,16 +3,16 @@
   <title>Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="../css/homePage.css" rel="stylesheet">
+  <link href="../css/issue.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body style="margin: 0;">
   <div class="navbar">
-    <div class="navbar-new" href="/homePage">
+    <a class="navbar-new" href="/homePage">
       <img src="/images/homeIcon.png" style="width: 16px"></img>
-    </div>
+    </a>
     <div class="navbar-title">
-      HBAR: Title
+      HBAR: {Title}
     </div>
     <div class="navbar-settings">
       <div class="dropdown">
@@ -74,7 +74,7 @@
         </a>
           <div></div>
           <div class="completed">
-          <button class="not-filled-in" onclick="pop()">Mark Issue as Completed
+          <button class="not-filled-in" onclick="pop()" href="/homePage">Mark Issue as Completed
           </button>
         </div>
         </div>
