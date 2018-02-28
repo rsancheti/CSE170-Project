@@ -1,6 +1,8 @@
 {
     "Food with Matt": {
+        "boolean": true,
         "title": "Food with Matt",
+        "status": "COMPLETED",
         "category": "Food",
         "description": "Matt has been eating my snacks withough asking me first and it's really frustrating.",
         "duration": "2 weeks",
@@ -59,7 +61,9 @@
         ]
     },
     "Chores with Rinka": {
+        "boolean": false,
         "title": "Chores with Rinka",
+        "status": "IN PROGRESS",
         "category": "Food",
         "description": "Just simply tired",
         "duration": "2 weeks",
@@ -156,7 +160,26 @@
                 "month": 2,
                 "day": 27,
                 "comment": ""
+            },
+            {
+                "emoji": "Happy.png",
+                "month": 2,
+                "day": 27,
+                "comment": "I was very productive today and got a decent amount of work done. Also I was able to go to the gym even though I was not feeling it."
             }
         ]
+    },
+    "": {
+        "title": "",
+        "description": "",
+        "moods": [
+            {
+                "emoji": "Meh.png",
+                "month": 2,
+                "day": 27,
+                "comment": ""
+            }
+        ],
+        "status": "IN PROGRESS"
     }
 }

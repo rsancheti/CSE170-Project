@@ -44,6 +44,7 @@
 		</div>
 		<table>
 			{{#each objects}}
+			{{#if boolean}}
 			<tr><td>
 				<a href="./issue"><div class="section-title">{{title}}</div></a>
 					<div class="task-complete">
@@ -52,6 +53,16 @@
 			        				</div>
 			        			</div>
   			</td></tr>
+  			{{else}}
+  			<tr><td>
+				<a href="./issue"><div class="section-title">{{title}}</div></a>
+					<div class="in-progress">
+				<div class="text-area" id="addCSS">
+			        	<div class="mood-title">{{status}}</div>
+			        				</div>
+			        			</div>
+  			</td></tr>
+  			{{/if}}
     		{{/each}}
 
 <!--
