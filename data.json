@@ -171,15 +171,13 @@
     },
     "": {
         "title": "",
+        "category": "food",
         "description": "",
-        "moods": [
-            {
-                "emoji": "Meh.png",
-                "month": 2,
-                "day": 27,
-                "comment": ""
-            }
-        ],
+        "duration": "weeks",
+        "relationship": "dating",
+        "previous-steps": "directly communicated",
+        "frequency": "daily",
+        "moods": [],
         "status": "IN PROGRESS"
     }
 }

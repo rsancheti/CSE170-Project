@@ -23,6 +23,7 @@ var dailyMood = require('./routes/daily-mood');
 var login = require('./routes/login');
 var signup = require('./routes/signup');
 var issue = require('./routes/issue');
+var moodLogSplash = require('./routes/moodLogSplash');
 //var history = require('./routes/history');
 // Example route
 // var user = require('./routes/user');
@@ -52,6 +53,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/homePage', homePage.view);
 app.get('/moodLog', moodLog.view);
+app.get('/moodLogSplash', moodLogSplash.view);
 app.get('/history', history.view);
 app.get('/createNew', createNew.view);
 app.get('/newIssue', newIssue.view);
