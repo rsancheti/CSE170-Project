@@ -1,7 +1,6 @@
 {
     "Food with Matt": {
         "title": "Food with Matt",
-        "status": "IN PROGRESS",
         "category": "Food",
         "description": "Matt has been eating my snacks withough asking me first and it's really frustrating.",
         "duration": "2 weeks",
@@ -61,7 +60,6 @@
     },
     "Chores with Rinka": {
         "title": "Chores with Rinka",
-        "status": "COMPLETED",
         "category": "Food",
         "description": "Just simply tired",
         "duration": "2 weeks",
@@ -148,13 +146,7 @@
                 "comment": ""
             },
             {
-                "emoji": "Unhappy.png",
-                "month": 2,
-                "day": 27,
-                "comment": ""
-            },
-            {
-                "emoji": "Happy.png",
+                "emoji": "Angry.png",
                 "month": 2,
                 "day": 27,
                 "comment": ""
