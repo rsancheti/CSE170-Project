@@ -67,7 +67,7 @@ app.get('/daily-entry', dailyEntry.view);
 app.get('/signup', signup.view);
 app.get('/login', login.view);
 app.get('/issue/:issueName', issue.view);
-//app.get('/issue2/:issueName', issue2.view);
+app.get('/issue2/:issueName', issue2.view);
 
 
 
