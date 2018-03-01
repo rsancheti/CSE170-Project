@@ -4,5 +4,9 @@
  */
 
 exports.view = function(req, res){
-  res.render('issue');
+  	var titleName = req.params.issueName;
+	var data = require('../data.json');
+	var oneData = data[titleName];
+	console.log(oneData);
+  	res.render('issue', oneData);
 };

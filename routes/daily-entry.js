@@ -9,8 +9,10 @@ exports.view = function(req, res){
 
 exports.save = function(req, res){
 	var reqData = JSON.parse(req.param('data', null));
+	var latestMood = reqData.emoji;
 	var data = require('../data.json');
 	data[Object.keys(data)[Object.keys(data).length-1]].moods.push(reqData);
+	data[Object.keys(data)[Object.keys(data).length-1]].latestMood = latestMood;
 	var json = JSON.stringify(data, null, 4);
 	var fs = require('fs');
 	fs.writeFile('./data.json', json, function(err){

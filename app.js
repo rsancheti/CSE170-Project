@@ -52,9 +52,9 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/homePage', homePage.view);
-app.get('/moodLog', moodLog.view);
+app.get('/moodLog/:issueName', moodLog.view);
 app.get('/moodLogSplash', moodLogSplash.view);
-app.get('/history', history.view);
+app.get('/history/:issueName', history.view);
 app.get('/createNew', createNew.view);
 app.get('/newIssue', newIssue.view);
 app.get('/settings', settings.view);
@@ -65,7 +65,7 @@ app.get('/daily-mood', dailyMood.view);
 app.get('/daily-entry', dailyEntry.view);
 app.get('/signup', signup.view);
 app.get('/login', login.view);
-app.get('/issue', issue.view);
+app.get('/issue/:issueName', issue.view);
 
 
 app.post('/storeMood', dailyEntry.save);

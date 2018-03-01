@@ -9,6 +9,7 @@ exports.view = function(req, res){
 
 exports.save = function(req, res){
 	var reqData = JSON.parse(req.param('data', null));
+	console.log(reqData);
 	var data = require('../data.json');
 	data[reqData.title] = reqData;
 	var json = JSON.stringify(data, null, 4);

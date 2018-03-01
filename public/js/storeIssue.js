@@ -36,9 +36,10 @@ function clickFinish(e){
         frequencyVal = $("input[type='radio'].frequency:checked").val();
       }
 
-
       var newIssue = {
+        "boolean": false,
         "title": titleVal,
+        "status": "IN PROGRESS",
         "category": categoryVal,
         "description": descriptionVal,
         "duration": durationVal,
@@ -46,7 +47,7 @@ function clickFinish(e){
         "previous-steps": stepsVal,
         "frequency": frequencyVal,
         "moods": [],
-        "status": "IN PROGRESS"
+        "latestMood": null
       };
       $.post('/storeIssue', {data: JSON.stringify(newIssue)}, function(data, status){
         if(data.success){

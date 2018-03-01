@@ -12,7 +12,7 @@
       <img src="/images/homeIcon.png" style="width: 16px"></img>
     </a>
     <div class="navbar-title">
-      HBAR: {Title}
+      Issue Name: {{title}}
     </div>
     <div class="navbar-settings">
       <div class="dropdown">
@@ -26,14 +26,14 @@
   </div>
 
 <div class="main-content-area">
-  <a href="/moodLog">
+  <a href="/moodLog/{{title}}">
     <div class="mood">
       <div class="mood-text-area">
-        <div class="mood-title">RECENT MOOD LOG</div>
-        <div class="mood-current">HBAR: Mood</div>
+        <div class="mood-title">RECENT MOOD LOG</div><!--
+        <div class="mood-current">{{latestMood}}</div>-->
         <div class="mood-suggestion">Learn More →</div>
       </div>
-      <div class="mood-icon"></div>
+      <div class="mood-icon"><img src="../images/{{latestMood}}" width="100" height="100"></div>
     </div>
   </a>
 
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div class="final-options">
-          <a href="./history">
+          <a href="/history/{{title}}">
           <button class="filled-in">History
           </button>
         </a>
@@ -123,7 +123,7 @@ for (var i = 0; i < btns.length; i++) {
       var moodWord = moodValue.substring(0, moodValue.length - 4);
       $(".mood-current").html(moodWord);
 */
-
+/*
   $(document).ready(function(){
     var moodValue = localStorage.getItem('moods');
     var moodValueWithoutPNG = moodValue.replace(".png", "_white.png");
@@ -134,7 +134,7 @@ for (var i = 0; i < btns.length; i++) {
     var titleVal = localStorage.getItem("newlyCreatedTitle");
     $("#dropdown-content").append('<a href="/newIssue"><button class="issueTitle">' + titleVal + '</button></a><div></div>');
      });
-
+*/
 
 
     $(".not-filled-in").click(function(){
