@@ -113,21 +113,42 @@
         ],
         "latestMood": "Unhappy.png"
     },
+<<<<<<< HEAD
     "TESTER": {
         "boolean": false,
         "title": "TESTER",
         "status": "IN PROGRESS",
         "description": "a",
+=======
+    "hi": {
+        "boolean": false,
+        "title": "hi",
+        "status": "IN PROGRESS",
+        "description": "",
+        "moods": [],
+        "latestMood": null
+    },
+    "": {
+        "boolean": false,
+        "title": "",
+        "status": "IN PROGRESS",
+        "description": "",
+>>>>>>> 3b40ccdfdd27f909dc733388efff899e17a3d894
         "moods": [
             {
                 "emoji": "Unhappy.png",
                 "month": 3,
                 "day": 1,
+<<<<<<< HEAD
                 "comment": "Idk"
+=======
+                "comment": "j"
+>>>>>>> 3b40ccdfdd27f909dc733388efff899e17a3d894
             }
         ],
         "latestMood": "Unhappy.png"
     },
+<<<<<<< HEAD
     "a": {
         "boolean": false,
         "title": "a",
@@ -135,5 +156,21 @@
         "description": "",
         "moods": [],
         "latestMood": null
+=======
+    "jjjjj": {
+        "boolean": false,
+        "title": "jjjjj",
+        "status": "IN PROGRESS",
+        "description": "",
+        "moods": [
+            {
+                "emoji": "Unhappy.png",
+                "month": 3,
+                "day": 1,
+                "comment": ""
+            }
+        ],
+        "latestMood": "Unhappy.png"
+>>>>>>> 3b40ccdfdd27f909dc733388efff899e17a3d894
     }
 }
