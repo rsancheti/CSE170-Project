@@ -38,11 +38,7 @@
   }
 
   /* Add a red background color to navbar links on hover */
-  .dropdown:hover .dropbtn {
-    background-color: #F9BBAC;
-    color: black;
-    height: 48px;
-  }
+
 
   .navbar a:hover {
     background-color:#F9BBAC;
@@ -160,5 +156,3 @@ h3{
   border-top: 0.01em solid #9B9B9B;
 
 }
-
-
