@@ -65,17 +65,13 @@ p {
   text-decoration: none;
 }
 
-.new-issue {
-  text-align: center;
-}
-
 .filled-in {
-  background-color: #33cc99;
+  background-color: white;
   height: 48px;
   border-radius: 24px;
   width: 256px;
   border: none;
-  color: white;
+  color: #F4775A;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -84,4 +80,7 @@ p {
   font-weight: 500;
   border-radius: 24px;
   cursor: pointer;
+  position: fixed;
+    top: 537px;
+    right: 60px;
 }

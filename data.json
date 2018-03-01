@@ -171,13 +171,44 @@
     },
     "": {
         "title": "",
-        "category": "food",
         "description": "",
-        "duration": "weeks",
-        "relationship": "dating",
-        "previous-steps": "directly communicated",
-        "frequency": "daily",
         "moods": [],
+        "status": "IN PROGRESS"
+    },
+    "few": {
+        "title": "few",
+        "category": "food",
+        "description": "wettest",
+        "duration": "weeks",
+        "relationship": "friends",
+        "previous-steps": "nothing yet",
+        "frequency": "weekly",
+        "moods": [
+            {
+                "emoji": "Happy.png",
+                "month": 2,
+                "day": 28,
+                "comment": ""
+            },
+            {
+                "emoji": "Happy.png",
+                "month": 2,
+                "day": 28,
+                "comment": ""
+            },
+            {
+                "emoji": "Happy.png",
+                "month": 2,
+                "day": 28,
+                "comment": ""
+            },
+            {
+                "emoji": "Angry.png",
+                "month": 2,
+                "day": 28,
+                "comment": "bitchass Rajiv doesn't want to be eskimo bros. fuck Rajiv"
+            }
+        ],
         "status": "IN PROGRESS"
     }
 }
