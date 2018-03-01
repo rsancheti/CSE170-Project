@@ -306,10 +306,23 @@ table tr {
   color:  #33cc99;
 }
 
-.question-button:hover {
+.question-button2 {
+  height: 36px;
+  margin-bottom: 8px;
+  border: 1px solid #33cc99;
+  border-radius: 4px;
   background-color: #33cc99;
+  border-color:  #33cc99;;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
   color: white;
 }
+
+/* .question-button:hover {
+  background-color: #33cc99;
+  color: white;
+} */
 
 .final-options {
   margin-top: 36px;

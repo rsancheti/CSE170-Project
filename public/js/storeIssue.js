@@ -5,10 +5,25 @@ function goBack(){
 
   $(document).ready(function(e){
 
-  	$(".btn").click(function() {
-      $(this).css({"background-color":"#33cc99", "color":"white"});
-    });
+  	// $(".btn-q1").click(function(e) {
+    //   e.preventDefault()
+    //   console.log('hello')
+    //   // $('btn2-q1').toggleClass('btn2-q1 btn-q1');
+    //   $(this).toggleClass('btn-q1 btn2-q1');
+    // });
+    //
+    // $(".btn-q2").click(function() {
+    //   console.log('hello2')
+    //   $(this).toggleClass('btn-q2 btn2-q2');
+    // });
 
+    $(".btn-question").click(function(e){
+      e.preventDefault();
+      var qNo = $(this).attr('question');
+      // alert(qNo)
+      $('.btn-question[question="'+ qNo +'"]').removeClass('btn-question-selected');
+      $(this).addClass('btn-question-selected');
+    })
 
     $('#finish').click(clickFinish);
 
