@@ -142,8 +142,12 @@ for (var i = 0; i < btns.length; i++) {
     });
 
     $(".advice-checkbox").click(function() {
-      $(this).css({"background-color":"#33cc99", "border-color":"white"});
+      $(this).toggleClass('advice-checkbox advice-checkbox2');
     });
+
+    // $(".advice-checkbox").click(function() {
+    //   $(this).css({"background-color":"#33cc99", "border-color":"white"});
+    // });
 
     $(".question-button").click(function() {
       $(this).css({"background-color":"#33cc99", "color":"white"});

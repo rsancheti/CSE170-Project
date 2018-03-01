@@ -62,5 +62,25 @@
             }
         ],
         "latestMood": "Crying.png"
+    },
+    "hello": {
+        "boolean": false,
+        "title": "hello",
+        "status": "IN PROGRESS",
+        "category": "food",
+        "description": "none",
+        "duration": "weeks",
+        "relationship": "acquaintances",
+        "previous-steps": "tried mentioning it",
+        "frequency": "weekly",
+        "moods": [
+            {
+                "emoji": "Crying.png",
+                "month": 3,
+                "day": 1,
+                "comment": "wejhiwehiweg"
+            }
+        ],
+        "latestMood": "Crying.png"
     }
 }

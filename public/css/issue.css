@@ -218,6 +218,21 @@ p{
   cursor: pointer;
 }
 
+
+.advice-checkbox2 {
+  height: 48px;
+  width: 48px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  background-color: white;
+  cursor: pointer;
+  background-color : #33cc99;
+  border-color : white;
+}
+
 .advice-text-box {
   margin-right: 24px;
   font-family: Roboto;
