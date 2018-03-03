@@ -4,6 +4,11 @@
  */
 
 exports.view = function(req, res){
-  var data = require('../data.json');
+  //forces it to rad it from the file again 
+  var fs = require('fs');
+  var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+
+  // var data = require('../data.json');
+  console.log(data)
   res.render('homePage', {objects: data});
 };
