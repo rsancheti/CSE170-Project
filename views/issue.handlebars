@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="../css/issue.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <script src="../js/issuePage.js"></script>
 </head>
 <body style="margin: 0;">
   <div class="navbar">
@@ -13,7 +13,7 @@
       <img src="/images/homeIcon.png" style="width: 16px"></img>
     </a>
     <div class="navbar-title">
-      {{title}}
+      Issue Name: {{title}}
     </div>
     <div class="navbar-settings">
       <div class="dropdown">
@@ -43,26 +43,28 @@
     <table>
       <tr>
         <td><button class="advice-checkbox"></button></td>
-        <td class="advice-text-box">{{advice1}}</td>
+        <td class="advice-text-box">HBAR Advice 1</td>
       </tr>
       <tr>
         <td><button class="advice-checkbox"></button></td>
-        <td class="advice-text-box">{{advice2}}</td>
+        <td class="advice-text-box">HBAR Advice 2</td>
       </tr>
       <tr>
         <td><button class="advice-checkbox"></button></td>
-        <td class="advice-text-box">{{advice3}}</td>
+        <td class="advice-text-box">HBAR Advice 3</td>
       </tr>
     </table>
   <div class="question-content-area">
     <h1 class="heading">Additional Questions</h1>
     <div class="question-box">
-      <div class="question-text">{{q1}}
+      <div class="question-text">HHBAR Question
       </div>
       <div class="question-answers">
-        <button class="question-button">{{q1answer1}}
+        <button class="question-button">HBAR Q/A 1
         </button>
-        <button class="question-button">{{q1answer2}}
+        <button class="question-button">HBAR Q/A 2
+        </button>
+        <button class="question-button">HBAR Q/A 3
         </button>
       </div>
     </div>
@@ -81,6 +83,8 @@
 </div>
 </body>
 <script>
+
+
 // Get the container element
 var btnContainer = document.getElementById("dropdown-content");
 
@@ -136,12 +140,15 @@ for (var i = 0; i < btns.length; i++) {
 */
 
 
-    $(".not-filled-in").click(function(){
-      $(".completed").hide();
-    });
+
+
+
+
+  //   $('#finish').click(clickFinish);
+  //
+  // });
 
     $(".advice-checkbox").click(function() {
-      // post data
       $(this).toggleClass('advice-checkbox advice-checkbox2');
     });
 
