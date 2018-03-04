@@ -4,7 +4,13 @@
  */
 
 exports.view = function(req, res){
-  res.render('createNew');
+  //forces it to read it from the file again
+  var fs = require('fs');
+  var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+
+  // var data = require('../data.json');
+  console.log(data)
+  res.render('createNew', {objects: data});
 };
 
 exports.save = function(req, res){
