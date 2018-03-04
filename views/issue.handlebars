@@ -81,38 +81,27 @@
 </div>
 </body>
 <script>
-
-
 // Get the container element
 var btnContainer = document.getElementById("dropdown-content");
-
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("issueTitle");
-
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
   // click listener
   btns[i].addEventListener("click", function() {
-
   // get the "active" class
   var current = document.getElementsByClassName("active");
-
   // turn "active" inactive
   current[0].className = current[0].className.replace(" active", "");
-
   // turn clicked class "active"
   this.className += " active";
-
   // get the title of new "active" class
   var newActive = document.getElementsByClassName(" active");
   localStorage.setItem('selectedIssue', newActive[0].textContent);
-
   // .html title (needs [0] because newActive is an array)
   $(".title-sample").html(newActive[0].textContent);
-
 });
 }
-
   function pop(){
     alert("You have marked this issue as completed!");
   }
@@ -136,32 +125,20 @@ for (var i = 0; i < btns.length; i++) {
     $("#dropdown-content").append('<a href="/newIssue"><button class="issueTitle">' + titleVal + '</button></a><div></div>');
      });
 */
-
-
-
-
-
-
   //   $('#finish').click(clickFinish);
   //
   // });
-
     $(".advice-checkbox").click(function() {
       $(this).toggleClass('advice-checkbox advice-checkbox2');
     });
-
     // $(".advice-checkbox").click(function() {
     //   $(this).css({"background-color":"#33cc99", "border-color":"white"});
     // });
-
     $(".question-button").click(function() {
       $(this).toggleClass('question-button question-button2');
     });
-
     // $(".question-button").click(function() {
     //   $(this).css({"background-color":"#33cc99", "color":"white"});
     // });
-
-
 </script>
 </html>
