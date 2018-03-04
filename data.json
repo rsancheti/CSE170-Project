@@ -1,1 +1,120 @@
-{"Food with Matt":{"task-status":"true","title":"Food with Matt","status":"COMPLETED","category":"Food","description":"Matt has been eating my snacks withough asking me first and it's really frustrating.","duration":"2 weeks","relationship":"Friend","previous-steps":"None","frequency":"Daily","moods":[{"emoji":"Happy.png","month":"Feb","day":"01","comment":"I talked to him today about the issue."},{"emoji":"Angry.png","month":"Feb","day":"02","comment":"His behavior has not changed at all!"},{"emoji":"Unhappy.png","month":"Feb","day":"03","comment":"I just wish he could at least ask me first."}],"latestMood":"Unhappy.png"},"Chores with Rinka":{"task-status":"false","title":"Chores with Rinka","status":"IN PROGRESS","category":"Food","description":"Just simply tired","duration":"2 weeks","relationship":"Friend","previous-steps":"None","frequency":"Daily","moods":[{"emoji":"Unhappy.png","month":"Dec","day":"26","comment":"ASDF"},{"emoji":"Angry.png","month":"2","day":"22","comment":""},{"emoji":"Crying.png","month":"2","day":"22","comment":"JUST WORK PLZZ"}],"latestMood":"Crying.png"},"temp":{"boolean":"false","title":"temp","status":"IN PROGRESS","description":"","moods":[{"emoji":"Unhappy.png","month":"3","day":"2","comment":""}],"latestMood":"Unhappy.png"},"egwgwe":{"boolean":"false","title":"egwgwe","status":"COMPLETED","description":"","moods":[{"emoji":"Unhappy.png","month":"3","day":"2","comment":""}],"latestMood":"Unhappy.png","task-status":"true"}}
+{
+    "Food with Matt": {
+        "task-status": "true",
+        "title": "Food with Matt",
+        "status": "COMPLETED",
+        "category": "Food",
+        "description": "Matt has been eating my snacks withough asking me first and it's really frustrating.",
+        "duration": "2 weeks",
+        "relationship": "Friend",
+        "previous-steps": "None",
+        "frequency": "Daily",
+        "moods": [
+            {
+                "emoji": "Happy.png",
+                "month": "Feb",
+                "day": "01",
+                "comment": "I talked to him today about the issue."
+            },
+            {
+                "emoji": "Angry.png",
+                "month": "Feb",
+                "day": "02",
+                "comment": "His behavior has not changed at all!"
+            },
+            {
+                "emoji": "Unhappy.png",
+                "month": "Feb",
+                "day": "03",
+                "comment": "I just wish he could at least ask me first."
+            }
+        ],
+        "latestMood": "Unhappy.png"
+    },
+    "Chores with Rinka": {
+        "task-status": "false",
+        "title": "Chores with Rinka",
+        "status": "IN PROGRESS",
+        "category": "Food",
+        "description": "Just simply tired",
+        "duration": "2 weeks",
+        "relationship": "Friend",
+        "previous-steps": "None",
+        "frequency": "Daily",
+        "moods": [
+            {
+                "emoji": "Unhappy.png",
+                "month": "Dec",
+                "day": "26",
+                "comment": "ASDF"
+            },
+            {
+                "emoji": "Angry.png",
+                "month": "2",
+                "day": "22",
+                "comment": ""
+            },
+            {
+                "emoji": "Crying.png",
+                "month": "2",
+                "day": "22",
+                "comment": "JUST WORK PLZZ"
+            }
+        ],
+        "latestMood": "Crying.png"
+    },
+    "temp": {
+        "boolean": "false",
+        "title": "temp",
+        "status": "IN PROGRESS",
+        "description": "",
+        "moods": [
+            {
+                "emoji": "Unhappy.png",
+                "month": "3",
+                "day": "2",
+                "comment": ""
+            }
+        ],
+        "latestMood": "Unhappy.png"
+    },
+    "egwgwe": {
+        "boolean": "false",
+        "title": "egwgwe",
+        "status": "COMPLETED",
+        "description": "",
+        "moods": [
+            {
+                "emoji": "Unhappy.png",
+                "month": "3",
+                "day": "2",
+                "comment": ""
+            }
+        ],
+        "latestMood": "Unhappy.png",
+        "task-status": "true"
+    },
+    "wwgewgewg": {
+        "boolean": false,
+        "title": "wwgewgewg",
+        "status": "IN PROGRESS",
+        "description": "",
+        "moods": [],
+        "latestMood": null
+    },
+    "sg": {
+        "task-status": "false",
+        "title": "sg",
+        "status": "IN PROGRESS",
+        "description": "",
+        "moods": [
+            {
+                "emoji": "Angry.png",
+                "month": 3,
+                "day": 3,
+                "comment": ""
+            }
+        ],
+        "latestMood": "Angry.png"
+    }
+}

@@ -52,7 +52,7 @@ function clickFinish(e){
       }
 
       var newIssue = {
-        "boolean": false,
+        "task-status": "false",
         "title": titleVal,
         "status": "IN PROGRESS",
         "category": categoryVal,
