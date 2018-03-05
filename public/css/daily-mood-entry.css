@@ -1,3 +1,16 @@
+.instructions{
+  text-align: left;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Roboto;
+  color: black;
+}
+
 .icon-bar {
     width: 100%; /* Full-width */
     background-color: #F4775A; /* background */
@@ -128,7 +141,7 @@ h1 {
 }
 
 .navigation-table-container {
-  margin-top: 15px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -167,17 +180,17 @@ h1 {
 
 #backtext {
   font-family: Roboto;
-  color: #F4775A;
+  color: #33cc99;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
 }
 
 .log-in2 {
-  background-color: #F4775A;
+  background-color: #33cc99;
   color: white;
-  width: 180px;
-  border: 1px solid #F4775A;
+  width: 218px;
+  border: 1px solid #33cc99;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
