@@ -2,14 +2,29 @@
 <head>
 	<title>Daily Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="../js/jquery-1.11.0.js"></script>
-		<script src="../js/storeMood.js"></script>
-		<link href="../css/daily-mood-entry.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/storeMood.js"></script>
+	<link href="../css/daily-mood-entry.css" rel="stylesheet">
 </head>
 <body style="margin: 0;">
 	<div class="icon-bar">
-		<h2>DAILY MOOD ENTRY</h2>
+	  <div class="navbar-new">
+	    <i onclick="goBack()" class="fa fa-chevron-left"></i>
+	  </div>
+	  <div class="navbar-settings">
+	    <div class="dropdown">
+	      <button class="dropbtn">&#9776;</button>
+	      <div id="dropdown-content" style="right:0">
+	        <a href="/settings">Settings</a>
+	        <a href="/">Log Out</a>
+	      </div>
+	    </div>
+	  </div>
+	  <h2>DAILY ENTRY</h2>
 	</div>
+
+
 	<div class="mood"></div>
 	<h1>Describe why you're feeling this way</h1>
 
