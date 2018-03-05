@@ -71,8 +71,12 @@ th, td {
     padding: 5px;
 }
 
+a {
+  text-decoration: none;
+}
 
 .section-title {
+  text-decoration: none;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -80,7 +84,6 @@ th, td {
   padding-top: 0px;
   padding-bottom: 8px;
   padding-left: 0px;
-  text-decoration: none;
 }
 
 .in-progress {
