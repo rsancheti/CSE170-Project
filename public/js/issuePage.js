@@ -7,7 +7,7 @@ function get_json_callback(data){
   // debugger;
   var parts = decodeURI(window.location.href).split('/');
   var key = parts[parts.length - 1];
-  data[key]['task-status'] = "true";
+  data[key]['task-status'] = true;
   data[key].status = "COMPLETED";
   $.post('/set_data_json', data, set_json_callback);
 }
