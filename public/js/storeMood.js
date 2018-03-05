@@ -5,7 +5,7 @@ function goBack(){
 
 $(document).ready(function(e){
   var moodVal = localStorage.getItem('moods');
-  var image = "../images/" + moodVal;
+  var image = "../images/" + moodVal + ".png";
   $(".mood").append("<img class='pic' src='" + image +"'/>");
 
   $('#finish').click(clickFinish);
