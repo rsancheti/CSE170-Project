@@ -27,26 +27,26 @@
 	<h1 class="question-title">How are you feeling?</h1>
 
 	<form id="myForm">
-	<label>
-		<input type="radio" name="moods" value="Happy">
-		<img class="left" style="margin-right: 21px" src="../images/happy-orange.png">
-	</label>
-	<label>
-		<input type="radio" name="moods" value="Meh">
-		<img class="right" style="margin-left: 21px" src="../images/meh-orange.png">
-	</label><br />
-	<label>
-		<input type="radio" name="moods" value="Unhappy">
-		<img class="one-inline" src="../images/unhappy-orange.png">
-	</label><br />
-	<label>
-		<input type="radio" name="moods" value="Crying">
-		<img class="left" style="margin-right: 21px" src="../images/crying-orange.png">
-	</label>
-	<label>
-		<input type="radio" name="moods" value="Angry">
-		<img class="right" style="margin-left: 21px" src="../images/angry-orange.png">
-	</label>
+		<label>
+			<input type="radio" name="moods" value="Happy">
+			<img class="left" style="margin-right: 21px" src="../images/happy-orange.png">
+		</label>
+		<label>
+			<input type="radio" name="moods" value="Meh">
+			<img class="right" style="margin-left: 21px" src="../images/meh-orange.png">
+		</label><br />
+		<label>
+			<input type="radio" name="moods" value="Unhappy">
+			<img class="one-inline" src="../images/unhappy-orange.png">
+		</label><br />
+		<label>
+			<input type="radio" name="moods" value="Crying">
+			<img class="left" style="margin-right: 21px" src="../images/crying-orange.png" id="imgClickAndChange" onclick="changeImage()">
+		</label>
+		<label>
+			<input type="radio" name="moods" value="Angry">
+			<img class="right" style="margin-left: 21px" src="../images/angry-orange.png">
+		</label>
 </form>
 <div class="final-options">
 	<a href="./daily-entry">
@@ -54,7 +54,32 @@
 	</a>
 </div>
 </div>
+<!-- <p>
+        <img alt="" src="../images/crying-orange.png"
+            style="height: 85px; width: 85px" id="imgClickAndChange" onclick="changeImage()"  />
+</p> -->
+
 </body>
+
+
+
+
+<script language="javascript">
+    function changeImage() {
+        if (document.getElementById("imgClickAndChange").src == "../images/crying-orange.png")
+        {
+            document.getElementById("imgClickAndChange").src = "../images/crying-green.png";
+        }
+        if (document.getElementById("imgClickAndChange").src == "../images/crying-green.png")
+        {
+            document.getElementById("imgClickAndChange").src = "../images/crying-orange.png";
+        }
+				else
+				{
+					document.getElementById("imgClickAndChange").src = "../images/crying-green.png";
+				}
+    }
+</script>
 
 <script>
   $(document).ready(function(){
