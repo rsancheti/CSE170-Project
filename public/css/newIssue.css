@@ -1,12 +1,6 @@
 body {
   font-family: Roboto;
 }
-.icon-bar {
-    width: 100%; /* Full-width */
-    background-color: #F4775A; /* background */
-    overflow: auto; /* Overflow due to float */
-    height: 48px;
-}
 
 .icon-bar h2 {
   font-family: Roboto;
@@ -15,8 +9,17 @@ body {
   letter-spacing: 1.06px;
   color: White;
   text-align: center;
-  margin-left: 45px;
+  padding-right: 25px;
 }
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #F4775A; /* background */
+    overflow: auto; /* Overflow due to float */
+    height: 48px;
+}
+
+
 
 .mood-title {
   font-family: Roboto;
