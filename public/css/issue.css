@@ -353,3 +353,11 @@ table tr {
 .images img{
   margin: 0 auto;
 }
+
+.checkbox-label {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 19px;
+  margin-bottom: 8px;
+}
