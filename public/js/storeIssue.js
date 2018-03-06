@@ -51,6 +51,12 @@ function clickFinish(e){
         frequencyVal = $("input[type='radio'].frequency:checked").val();
       }
 
+      var adviceVal = "";
+      if(categoryVal == "cleaning"){
+        adviceVal = " jksadfkla;"
+      }
+
+      
       var newIssue = {
         "task-status": false,
         "title": titleVal,
