@@ -12,20 +12,20 @@
         "moods": [
             {
                 "emoji": "Happy",
-                "month": "Feb",
-                "day": "01",
+                "month": 2,
+                "day": 1,
                 "comment": "I talked to him today about the issue."
             },
             {
                 "emoji": "Angry",
-                "month": "Feb",
-                "day": "02",
+                "month": 2,
+                "day": 2,
                 "comment": "His behavior has not changed at all!"
             },
             {
                 "emoji": "Unhappy",
-                "month": "Feb",
-                "day": "03",
+                "month": 2,
+                "day": 3,
                 "comment": "I just wish he could at least ask me first."
             }
         ],
@@ -40,61 +40,26 @@
         "q1answer1": "Yes",
         "q1answer2": "No"
     },
-    "Temp2": {
+    "Chores with Jeb": {
         "task-status": false,
-        "title": "Temp2",
+        "title": "Chores with Jeb",
         "status": "IN PROGRESS",
-        "description": "temp2",
-        "moods": [],
+        "description": "Jeb never does his own dishes",
+        "moods": [
+            {   
+                "emoji": "Unhappy",
+                "month": 1,
+                "day": 18,
+                "comment": "I just wish he could at least ask me first."  
+            },
+            {
+                "emoji": "Happy",
+                "month": 2,
+                "day": 1,
+                "comment": "I talked to him today about the issue."
+            }
+        ],
         "latestMood": null,
-        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
-        "advice1status": "incomplete",
-        "advice2": "Mention the issue, but be sure not to place blame",
-        "advice2status": "incomplete",
-        "advice3": "Communicate your concerns and why it is important to you",
-        "advice3status": "incomplete",
-        "q1": "Have you been able to observe any additional behavior?",
-        "q1answer1": "Yes",
-        "q1answer2": "No"
-    },
-    "wegweg": {
-        "task-status": false,
-        "title": "wegweg",
-        "status": "IN PROGRESS",
-        "description": "",
-        "moods": [
-            {
-                "emoji": "Angry",
-                "month": 3,
-                "day": 5,
-                "comment": ""
-            }
-        ],
-        "latestMood": "Angry",
-        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
-        "advice1status": "incomplete",
-        "advice2": "Mention the issue, but be sure not to place blame",
-        "advice2status": "incomplete",
-        "advice3": "Communicate your concerns and why it is important to you",
-        "advice3status": "incomplete",
-        "q1": "Have you been able to observe any additional behavior?",
-        "q1answer1": "Yes",
-        "q1answer2": "No"
-    },
-    "": {
-        "task-status": false,
-        "title": "",
-        "status": "IN PROGRESS",
-        "description": "",
-        "moods": [
-            {
-                "emoji": "Crying",
-                "month": 3,
-                "day": 5,
-                "comment": ""
-            }
-        ],
-        "latestMood": "Crying",
         "advice1": "If the issue is not serious, wait a few more days and observe behavior",
         "advice1status": "incomplete",
         "advice2": "Mention the issue, but be sure not to place blame",

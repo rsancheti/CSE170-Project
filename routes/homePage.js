@@ -9,6 +9,6 @@ exports.view = function(req, res){
   var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
   // var data = require('../data.json');
-  console.log(data)
+  // console.log(data)
   res.render('homePage', {objects: data});
 };
