@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var homePage = require('./routes/homePage');
+var homePage2 = require('./routes/homePage2');
 var createNew = require('./routes/createNew');
 var newIssue = require('./routes/newIssue');
 var moodLog = require('./routes/moodLog');
@@ -55,6 +56,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/homePage', homePage.view);
+app.get('/homePage2', homePage2.view);
 app.get('/moodLog/:issueName', moodLog.view);
 app.get('/chart/:issueName', moodLog.chart);
 app.get('/moodLogSplash', moodLogSplash.view);

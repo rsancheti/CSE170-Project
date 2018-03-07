@@ -1,20 +1,5 @@
 <html>
 <head>
-	<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='171098186-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115292039-1"></script>
 <script>
@@ -79,7 +64,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			{{#each objects}}
 			{{#if task-status}}
 			<tr><td>
-				<a href="./issue/{{title}}"><div class="section-title" id="{{title}}">{{title}}</div></a>
+				<a href="./issue2/{{title}}"><div class="section-title" id="{{title}}">{{title}}</div></a>
 					<div class="task-complete">
 				<div class="text-area" id="addCSS">
 			        	<div class="mood-title">{{status}}</div>
@@ -88,7 +73,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
   			</td></tr>
   			{{else}}
   			<tr><td>
-				<a href="./issue/{{title}}"><div class="section-title" id="{{title}}">{{title}}</div></a>
+				<a href="./issue2/{{title}}"><div class="section-title" id="{{title}}">{{title}}</div></a>
 					<div class="in-progress">
 				<div class="text-area" id="addCSS">
 			        	<div class="mood-title">{{status}}</div>
