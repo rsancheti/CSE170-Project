@@ -1,9 +1,4 @@
-
-function goBack(){
-      window.history.back();
-    }
-
-  $(document).ready(function(e){
+$(document).ready(function(e){
 
   	// $(".btn-q1").click(function(e) {
     //   e.preventDefault()
@@ -29,6 +24,10 @@ function goBack(){
 
   });
 
+  function goBack(){
+        window.history.back();
+      }
+
 function clickFinish(e){
       e.preventDefault();
       var titleVal = $("#title").val();
@@ -50,13 +49,13 @@ function clickFinish(e){
       if($("input[type='radio'].frequency").is(':checked')) {
         frequencyVal = $("input[type='radio'].frequency:checked").val();
       }
-
-      var adviceVal = "";
-      if(categoryVal == "cleaning"){
-        adviceVal = " jksadfkla;"
+      if(true){
+        adviceVal1 = " jksadfkla";
+        adviceVal2 = "weflwlfew";
+        adviceVal3 = "wefwfwefwfw";
       }
 
-      
+
       var newIssue = {
         "task-status": false,
         "title": titleVal,
@@ -69,12 +68,14 @@ function clickFinish(e){
         "frequency": frequencyVal,
         "moods": [],
         "latestMood": null,
-        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
-        "advice1status": "incomplete",
-        "advice2": "Mention the issue, but be sure not to place blame",
-        "advice2status": "incomplete",
-        "advice3": "Communicate your concerns and why it is important to you",
-        "advice3status": "incomplete",
+        // "advice1": "If the issue is not serious, wait a few more days and observe behavior",
+        // "advice1status": "incomplete",
+        // "advice2": "Mention the issue, but be sure not to place blame",
+        // "advice2status": "incomplete",
+        // "advice3": "Communicate your concerns and why it is important to you",
+        "advice1": adviceVal1,
+        "advice2": adviceVal2,
+        "advice3": adviceVal3,
         "q1": "Have you been able to observe any additional behavior?",
         "q1answer1": "Yes",
         "q1answer2": "No"

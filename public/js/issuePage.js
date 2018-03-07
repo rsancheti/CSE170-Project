@@ -3,6 +3,10 @@ function set_json_callback(data){
   //send back to home or change button text
 }
 
+function goBack(){
+      window.history.back();
+    }
+
 function get_json_callback(data){
   // debugger;
   var parts = decodeURI(window.location.href).split('/');

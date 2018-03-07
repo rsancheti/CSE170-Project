@@ -61,7 +61,6 @@
 <div class="advice-content-area">
     <h1 class="heading">Advice</h1>
     <table>
-      <div class="checkbox-label">COMPLETED</div>
       <tr>
         <td><button class="advice-checkbox"></button></td>
         <td class="advice-text-box">{{advice1}}</td>
@@ -88,16 +87,20 @@
       </div>
     </div>
     <div class="final-options">
-          <a href="/history/{{title}}">
+        <a href="/history/{{title}}">
           <button class="filled-in">History
           </button>
         </a>
           <div></div>
           <div class="completed">
-          <button class="not-filled-in" onclick="pop()" href="/homePage">Mark Issue as Completed
-          </button>
+            <a href="/homePage">
+              <button onclick="pop()" class="not-filled-in">Mark Issue as Completed</button>
+            </a>
+          </div>
         </div>
-        </div>
+
+
+
 
 </div>
 </body>
