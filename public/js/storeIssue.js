@@ -34,11 +34,17 @@ function clickFinish(e){
       var categoryVal, durationVal, relationshipVal, stepsVal, frequencyVal;
       var descriptionVal = $("#description").val();
 
+
+
       if($("input[type='radio'].category").is(':checked')) {
         categoryVal = $("input[type='radio'].category:checked").val();
+        console.log("Hello again!!!");
+
       }
+
       if($("input[type='radio'].duration").is(':checked')) {
         durationVal = $("input[type='radio'].duration:checked").val();
+
       }
       if($("input[type='radio'].relationship").is(':checked')) {
         relationshipVal = $("input[type='radio'].relationship:checked").val();

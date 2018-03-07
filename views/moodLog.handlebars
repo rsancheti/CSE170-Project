@@ -90,15 +90,15 @@
       }
       for (var i=0; i<data.getNumberOfRows(); i++){
         ticksX.push(data.getValue(i, 0));
-        ticksY.push(data.getValue(i, 1));        
+        ticksY.push(data.getValue(i, 1));
       }
       console.log(data);
       var options = {
-        hAxis: { 
+        hAxis: {
           title: 'Time',
           ticks: ticksX
         },
-        vAxis: { 
+        vAxis: {
           title: 'Mood',
           ticks: ticksY,
           minValue: 0
@@ -117,7 +117,7 @@
         }*/
       }
       var chart = new google.visualization.LineChart(document.getElementById('donutchart'));
-      chart.draw(data, options);       
+      chart.draw(data, options);
       }
     }
 
@@ -164,7 +164,7 @@
 	<table>
 		<tr>
 			<th id="col-1"><figure class="pictures">
-				<img src="../images/{{emoji}}.png" width="60" height="60">
+				<img src="../images/{{emoji}}-green.png" width="60" height="60">
 				<figcaption>{{month}}, {{day}}, 2018</figcaption>
 			</figure></th>
 			<th id="col-2">{{comment}}</th>
