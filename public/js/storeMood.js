@@ -6,6 +6,8 @@ function goBack(){
 $(document).ready(function(e){
   var moodVal = localStorage.getItem('moods');
   var image = "../images/" + moodVal + ".png";
+  var imageOrange = "../images/" + moodVal + "-orange.png";
+  $(".mood-orange").append("<img class='pic' src='" + imageOrange +"'/>");
   $(".mood").append("<img class='pic' src='" + image +"'/>");
 
   $('#finish').click(clickFinish);
