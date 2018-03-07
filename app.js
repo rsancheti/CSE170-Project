@@ -56,6 +56,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/homePage', homePage.view);
 app.get('/moodLog/:issueName', moodLog.view);
+app.get('/chart/:issueName', moodLog.chart);
 app.get('/moodLogSplash', moodLogSplash.view);
 app.get('/history/:issueName', history.view);
 app.get('/createNew', createNew.view);
