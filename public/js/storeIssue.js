@@ -56,10 +56,29 @@ function clickFinish(e){
       console.log(frequencyVal);
 
 
-      if(true){
-        adviceVal1 = " jksadfkla";
-        adviceVal2 = "weflwlfew";
-        adviceVal3 = "wefwfwefwfw";
+      adviceVal1 = "If the issue is not serious, wait a few more days and observe behavior";
+      adviceVal2 = "Mention the issue, but be sure not to place blame";
+      adviceVal3 = "Communicate your concerns and why it is important to you";
+
+      if(categoryVal == "food"){
+        console.log("Entered Food Advice Section");
+        adviceVal1 = " food 1";
+        adviceVal2 = "food 2";
+        adviceVal3 = "food 3";
+      }
+
+      if(categoryVal == "cleaning"){
+        console.log("Entered Cleaning Advice Section");
+        adviceVal1 = "cleaning 1";
+        adviceVal2 = "cleaning 2";
+        adviceVal3 = "cleaning 3";
+      }
+
+      if(categoryVal == "personal"){
+        console.log("Entered Personal Advice Section");
+        adviceVal1 = " personal 1";
+        adviceVal2 = "personal 2";
+        adviceVal3 = "personal 3";
       }
 
 
@@ -80,9 +99,9 @@ function clickFinish(e){
         // "advice2": "Mention the issue, but be sure not to place blame",
         // "advice2status": "incomplete",
         // "advice3": "Communicate your concerns and why it is important to you",
-        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
-        "advice2": "Mention the issue, but be sure not to place blame",
-        "advice3": "Communicate your concerns and why it is important to you",
+        "advice1": adviceVal1,
+        "advice2": adviceVal2,
+        "advice3": adviceVal3,
         "q1": "Have you been able to observe any additional behavior?",
         "q1answer1": "Yes",
         "q1answer2": "No"
