@@ -10,7 +10,8 @@ exports.view = function(req, res){
 exports.save = function(req, res){
 	var reqData = JSON.parse(req.param('data', null));
 	var latestMood = reqData.emoji;
-	var data = require('../data.json');
+  var fs = require('fs');
+  var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 	data[Object.keys(data)[Object.keys(data).length-1]].moods.push(reqData);
 	data[Object.keys(data)[Object.keys(data).length-1]].latestMood = latestMood;
 	var json = JSON.stringify(data, null, 4);

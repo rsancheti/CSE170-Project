@@ -4,6 +4,7 @@
  */
 
 exports.view = function(req, res){
-  var data = require('../data.json');
+  var fs = require('fs');
+  var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
   res.render('moodLogSplash', {objects: data});
 };

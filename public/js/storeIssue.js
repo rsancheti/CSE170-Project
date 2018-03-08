@@ -35,26 +35,27 @@ function clickFinish(e){
       var descriptionVal = $("#description").val();
 
 
+      categoryVal = $('.btn-question.btn-question-selected[question="1"]').text().trim();
 
-      if($("input[type='radio'].category").is(':checked')) {
-        categoryVal = $("input[type='radio'].category:checked").val();
-        console.log("Hello again!!!");
+      console.log(categoryVal);
 
-      }
+      durationVal = $('.btn-question.btn-question-selected[question="2"]').text().trim();
 
-      if($("input[type='radio'].duration").is(':checked')) {
-        durationVal = $("input[type='radio'].duration:checked").val();
+      console.log(durationVal);
 
-      }
-      if($("input[type='radio'].relationship").is(':checked')) {
-        relationshipVal = $("input[type='radio'].relationship:checked").val();
-      }
-      if($("input[type='radio'].previous-steps").is(':checked')) {
-        stepsVal = $("input[type='radio'].previous-steps:checked").val();
-      }
-      if($("input[type='radio'].frequency").is(':checked')) {
-        frequencyVal = $("input[type='radio'].frequency:checked").val();
-      }
+      relationshipVal = $('.btn-question.btn-question-selected[question="3"]').text().trim();
+
+      console.log(relationshipVal);
+
+      stepsVal = $('.btn-question.btn-question-selected[question="4"]').text().trim();
+
+      console.log(stepsVal);
+
+      frequencyVal = $('.btn-question.btn-question-selected[question="5"]').text().trim();
+
+      console.log(frequencyVal);
+
+
       if(true){
         adviceVal1 = " jksadfkla";
         adviceVal2 = "weflwlfew";
@@ -63,7 +64,7 @@ function clickFinish(e){
 
 
       var newIssue = {
-        "task-status": false,
+        "taskStatus": false,
         "title": titleVal,
         "status": "IN PROGRESS",
         "category": categoryVal,

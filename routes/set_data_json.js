@@ -1,5 +1,4 @@
 exports.view = function(req, res){
-	// var data = require('../data.json');
 	// console.log(req.body);
 	var json = JSON.stringify(req.body);
 	// console.log(data);

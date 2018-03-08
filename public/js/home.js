@@ -3,5 +3,6 @@ $(document).ready(function() {
 })
 
 function intializePage() {
-  var data = require('../data.json');
+	var fs = require('fs');
+  var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 }
