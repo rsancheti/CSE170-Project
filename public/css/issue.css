@@ -1,18 +1,21 @@
 .icon-bar {
     width: 100%; /* Full-width */
-    background-color: #F4775A; /* background */
+    background-color: white; /* background */
     overflow: auto; /* Overflow due to float */
     height: 48px;
+    border-bottom: 1px solid #bababa;
+    box-shadow: 0px 2px 2px #bababa;
 }
+
 
 .icon-bar h2 {
   font-family: Roboto;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 1.06px;
-  color: White;
+  color: #33cc99;
   text-align: center;
-  padding-right: 35px;
+  margin-right: 48px;
 }
 
 .mood-title {
