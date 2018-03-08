@@ -56,29 +56,26 @@ function clickFinish(e){
       console.log(frequencyVal);
 
 
-      adviceVal1 = "If the issue is not serious, wait a few more days and observe behavior";
-      adviceVal2 = "Mention the issue, but be sure not to place blame";
-      adviceVal3 = "Communicate your concerns and why it is important to you";
+      adviceVal1 = "Mention the issue, but be sure not to place blame.";
+      adviceVal2 = "Communicate your concerns and why it is important to you.";
+      adviceVal3 = "Have one final discussion, before informing a house advisor.";
 
       if(categoryVal == "food"){
         console.log("Entered Food Advice Section");
-        adviceVal1 = " food 1";
-        adviceVal2 = "food 2";
-        adviceVal3 = "food 3";
+        adviceVal1 = "Be assertive. Layout groundrules for when or if sharing/taking food is okay.";
+        adviceVal2 = "Discuss potentially buying groceries together or set up a reimbursement system.";
+        adviceVal3 = "Have one final discussion, before informing a house advisor.";
       }
 
       if(categoryVal == "cleaning"){
         console.log("Entered Cleaning Advice Section");
-        adviceVal1 = "cleaning 1";
-        adviceVal2 = "cleaning 2";
-        adviceVal3 = "cleaning 3";
+        adviceVal1 = "Be assertive. Discuss your expectations of how clean the apartment should be.";
+        adviceVal2 = "Implement a chore schedule. This is the easiest way to lay down expectation and goals.";
+        adviceVal3 = "Have one final discussion, before informing a house advisor.";
       }
 
       if(categoryVal == "personal"){
         console.log("Entered Personal Advice Section");
-        adviceVal1 = " personal 1";
-        adviceVal2 = "personal 2";
-        adviceVal3 = "personal 3";
       }
 
 

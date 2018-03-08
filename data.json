@@ -1,26 +1,78 @@
 {
-    "Food with Matthew": {
-        "taskStatus": "true",
-        "title": "Food with Matthew",
-        "status": "COMPLETED",
+    "Food with Matt": {
+        "taskStatus": false,
+        "title": "Food with Matt",
+        "status": "IN PROGRESS",
         "category": "food",
-        "description": "Testing this Issue",
-        "duration": "months",
+        "description": "He Eats my Food",
+        "duration": "days",
         "relationship": "friends",
         "previous-steps": "tried mentioning it",
         "frequency": "daily",
         "moods": [
             {
-                "emoji": "Unhappy",
-                "month": "3",
-                "day": "8",
-                "comment": "I hate it"
+                "emoji": "Meh",
+                "month": 3,
+                "day": 8,
+                "comment": "I don't like it when he takes my food"
             }
         ],
-        "latestMood": "Unhappy",
-        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
-        "advice2": "Mention the issue, but be sure not to place blame",
-        "advice3": "Communicate your concerns and why it is important to you",
+        "latestMood": "Meh",
+        "advice1": "Be assertive. Layout groundrules for when or if sharing/taking food is okay.",
+        "advice2": "Discuss potentially buying groceries together or set up a reimbursement system.",
+        "advice3": "Have one final discussion, before informing a house advisor.",
+        "q1": "Have you been able to observe any additional behavior?",
+        "q1answer1": "Yes",
+        "q1answer2": "No"
+    },
+    "Dishes with Ryan": {
+        "taskStatus": false,
+        "title": "Dishes with Ryan",
+        "status": "IN PROGRESS",
+        "category": "cleaning",
+        "description": "He doesn't do the dishes",
+        "duration": "months",
+        "relationship": "acquaintances",
+        "previous-steps": "directly communicated",
+        "frequency": "daily",
+        "moods": [
+            {
+                "emoji": "Angry",
+                "month": 3,
+                "day": 8,
+                "comment": "I hate how he leaves his dishes"
+            }
+        ],
+        "latestMood": "Angry",
+        "advice1": "Be assertive. Discuss your expectations of how clean the apartment should be.",
+        "advice2": "Implement a chore schedule. This is the easiest way to lay down expectation and goals.",
+        "advice3": "Have one final discussion, before informing a house advisor.",
+        "q1": "Have you been able to observe any additional behavior?",
+        "q1answer1": "Yes",
+        "q1answer2": "No"
+    },
+    "Guests with Emma": {
+        "taskStatus": false,
+        "title": "Guests with Emma",
+        "status": "IN PROGRESS",
+        "category": "personal",
+        "description": "Emma always has friends and guests like 24/7",
+        "duration": "weeks",
+        "relationship": "friends",
+        "previous-steps": "directly communicated",
+        "frequency": "weekly",
+        "moods": [
+            {
+                "emoji": "Crying",
+                "month": 3,
+                "day": 8,
+                "comment": "I cant sleep cause its so loud from all the guests. "
+            }
+        ],
+        "latestMood": "Crying",
+        "advice1": "Mention the issue, but be sure not to place blame.",
+        "advice2": "Communicate your concerns and why it is important to you.",
+        "advice3": "Have one final discussion, before informing a house advisor.",
         "q1": "Have you been able to observe any additional behavior?",
         "q1answer1": "Yes",
         "q1answer2": "No"
