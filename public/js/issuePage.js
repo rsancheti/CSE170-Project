@@ -18,7 +18,6 @@ function get_json_callback(data){
   data[key]['taskStatus'] = true;
   data[key].status = "COMPLETED";
   // console.log(data)
-  debugger;
   $.post('/set_data_json', data, set_json_callback);
 }
 

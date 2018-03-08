@@ -1,28 +1,28 @@
 {
-    "Food with Matthew": {
-        "taskStatus": false,
-        "title": "Food with Matthew",
-        "status": "IN PROGRESS",
-        "category": "food",
-        "description": "Testing this Issue",
-        "duration": "months",
-        "relationship": "friends",
-        "previous-steps": "tried mentioning it",
-        "frequency": "daily",
-        "moods": [
-            {
-                "emoji": "Unhappy",
-                "month": 3,
-                "day": 8,
-                "comment": "I hate it"
-            }
-        ],
-        "latestMood": "Unhappy",
-        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
-        "advice2": "Mention the issue, but be sure not to place blame",
-        "advice3": "Communicate your concerns and why it is important to you",
-        "q1": "Have you been able to observe any additional behavior?",
-        "q1answer1": "Yes",
-        "q1answer2": "No"
-    }
+   "Food with Matthew":{
+      "taskStatus":"true",
+      "title":"Food with Matthew",
+      "status":"COMPLETED",
+      "category":"food",
+      "description":"Testing this Issue",
+      "duration":"months",
+      "relationship":"friends",
+      "previous-steps":"tried mentioning it",
+      "frequency":"daily",
+      "moods":[
+         {
+            "emoji":"Unhappy",
+            "month":"3",
+            "day":"8",
+            "comment":"I hate it"
+         }
+      ],
+      "latestMood":"Unhappy",
+      "advice1":"If the issue is not serious, wait a few more days and observe behavior",
+      "advice2":"Mention the issue, but be sure not to place blame",
+      "advice3":"Communicate your concerns and why it is important to you",
+      "q1":"Have you been able to observe any additional behavior?",
+      "q1answer1":"Yes",
+      "q1answer2":"No"
+   }
 }
