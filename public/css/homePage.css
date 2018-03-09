@@ -88,7 +88,7 @@ a {
 }
 
 .in-progress {
-    background-color: #F4775A;
+    background-color: #8C8C8C;
     border-radius: 5px;
     height: 33px;
     width: 163px;
@@ -96,7 +96,7 @@ a {
 }
 
 .task-complete {
-    background-color: #33CC99;
+    background-color: #8C8C8C;
     border-radius: 5px;
     height: 33px;
     width: 163px;
