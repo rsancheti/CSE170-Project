@@ -96,6 +96,9 @@ h3 {
 }
 
 #motto {
+  display:block;
+    margin:auto;
+  width: 311px;
   align-items: center;
 }
 
