@@ -15,6 +15,30 @@
                 "month": "3",
                 "day": "8",
                 "comment": "I don't like it when he takes my food"
+            },
+            {
+                "emoji": "Happy",
+                "month": "3",
+                "day": "9",
+                "comment": "I talked to him and he said he would change."
+            },
+            {
+                "emoji": "Meh",
+                "month": "3",
+                "day": "10",
+                "comment": "Nothing yet."
+            },
+            {
+                "emoji": "Angry",
+                "month": "3",
+                "day": "11",
+                "comment": "He did it again. I just wish he could have asked me first, then I won't be that mad."
+            },
+            {
+                "emoji": "Sad",
+                "month": "3",
+                "day": "12",
+                "comment": "I am just very frustrated right now."
             }
         ],
         "latestMood": "Meh",
@@ -72,58 +96,6 @@
         "latestMood": "Crying",
         "advice1": "Mention the issue, but be sure not to place blame.",
         "advice2": "Communicate your concerns and why it is important to you.",
-        "advice3": "Have one final discussion, before informing a house advisor.",
-        "q1": "Have you been able to observe any additional behavior?",
-        "q1answer1": "Yes",
-        "q1answer2": "No"
-    },
-    "Csasdaw": {
-        "taskStatus": "true",
-        "title": "Csasdaw",
-        "status": "COMPLETED",
-        "category": "food",
-        "description": "qewfg",
-        "duration": "weeks",
-        "relationship": "dating",
-        "previous-steps": "tried mentioning it",
-        "frequency": "daily",
-        "moods": [
-            {
-                "emoji": "Crying",
-                "month": "3",
-                "day": "8",
-                "comment": "w3redfvxc"
-            }
-        ],
-        "latestMood": "Crying",
-        "advice1": "Be assertive. Layout groundrules for when or if sharing/taking food is okay.",
-        "advice2": "Discuss potentially buying groceries together or set up a reimbursement system.",
-        "advice3": "Have one final discussion, before informing a house advisor.",
-        "q1": "Have you been able to observe any additional behavior?",
-        "q1answer1": "Yes",
-        "q1answer2": "No"
-    },
-    "a": {
-        "taskStatus": false,
-        "title": "a",
-        "status": "IN PROGRESS",
-        "category": "food",
-        "description": "",
-        "duration": "",
-        "relationship": "",
-        "previous-steps": "",
-        "frequency": "",
-        "moods": [
-            {
-                "emoji": "Unhappy",
-                "month": 3,
-                "day": 8,
-                "comment": ""
-            }
-        ],
-        "latestMood": "Unhappy",
-        "advice1": "Be assertive. Layout groundrules for when or if sharing/taking food is okay.",
-        "advice2": "Discuss potentially buying groceries together or set up a reimbursement system.",
         "advice3": "Have one final discussion, before informing a house advisor.",
         "q1": "Have you been able to observe any additional behavior?",
         "q1answer1": "Yes",
