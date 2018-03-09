@@ -42,7 +42,6 @@ h3 {
   color: white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -61,7 +60,6 @@ h3 {
     padding-bottom: 12px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
