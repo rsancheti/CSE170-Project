@@ -30,17 +30,18 @@ h3 {
 }
 
 .final-options {
-  margin-top: 450px;
+  margin-top: 60px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
 .filled-in {
-  background-color: #F4775A;
-  border: 1px solid white;
+  background-color: white;
   height: 48px;
   border-radius: 24px;
   width: 256px;
-  color: white;
+  border: none;
+  color: #F4775A;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -49,11 +50,10 @@ h3 {
   font-weight: 500;
   border-radius: 24px;
   cursor: pointer;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
-.not-filled-in {
+/* .not-filled-in {
     background-color: white;
     color: #F4775A;
     width: 256px;
@@ -69,6 +69,26 @@ h3 {
     cursor: pointer;
     margin-top: 16px;
     margin-bottom: 16px;
+} */
+
+.not-filled-in {
+  background-color: #F4775A;
+  border: 1px solid white;
+  height: 48px;
+  border-radius: 24px;
+  width: 256px;
+  color: white;
+  text-decoration-color: orange;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 #choices {
@@ -76,13 +96,7 @@ h3 {
 }
 
 #motto {
-  position: fixed;
-    width: 311px;
-    height: 139px;
-    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
-    top: 214px;
-    left: 0;
-    right: 0;
+  align-items: center;
 }
 
 #login-text {
@@ -96,11 +110,11 @@ h3 {
 }
 
 #site-logo {
-  position: fixed;
-    margin: 5% auto;
-    top: 75px;
-    left: 0;
-    right: 0;
+
+  display:block;
+    margin:auto;
+  margin-top: 100px;
+  margin-bottom: 26px;
 }
 
 #username {
