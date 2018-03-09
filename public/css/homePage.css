@@ -88,7 +88,7 @@ a {
 }
 
 .in-progress {
-    background-color: #8C8C8C;
+    background-color: #ADADAD;
     border-radius: 5px;
     height: 33px;
     width: 163px;
@@ -96,7 +96,7 @@ a {
 }
 
 .task-complete {
-    background-color: #8C8C8C;
+    background-color: #ADADAD;
     border-radius: 5px;
     height: 33px;
     width: 163px;
@@ -110,10 +110,12 @@ a {
 .mood-title {
   font-family: Roboto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: white;
   padding-top: 6px;
   padding-left: 8px;
+  letter-spacing: 1.4px;
+  margin-top: 2px;
 }
 
 .navbar-settings {
