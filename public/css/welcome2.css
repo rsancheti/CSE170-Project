@@ -15,7 +15,7 @@ h2 {
   text-align: center;
   font-family: Roboto;
   color: white;
-  font-size: 22pt;
+  font-size: 24pt;
   font-weight: bold;
   letter-spacing: 1.6px;
 }
@@ -30,55 +30,16 @@ h3 {
 }
 
 .final-options {
-  margin-top: 60px;
-  margin-bottom: 36px;
+  margin-top: 500px;
   text-align: center;
 }
-
 .filled-in {
-  background-color: white;
-  height: 48px;
-  border-radius: 24px;
-  width: 256px;
-  border: none;
-  color: #F4775A;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 24px;
-  cursor: pointer;
-  margin-bottom: 0px;
-}
-
-/* .not-filled-in {
-    background-color: white;
-    color: #F4775A;
-    width: 256px;
-    border: 1px solid white;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 24px;
-    cursor: pointer;
-    margin-top: 16px;
-    margin-bottom: 16px;
-} */
-
-.not-filled-in {
   background-color: #F4775A;
   border: 1px solid white;
   height: 48px;
   border-radius: 24px;
   width: 256px;
   color: white;
-  text-decoration-color: orange;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -91,15 +52,37 @@ h3 {
   margin-bottom: 16px;
 }
 
+.not-filled-in {
+    background-color: white;
+    color: #F4775A;
+    width: 256px;
+    border: 1px solid white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
 #choices {
   text-align: center;
 }
 
 #motto {
-  display:block;
-    margin:auto;
-  width: 311px;
-  align-items: center;
+  position: fixed;
+    width: 311px;
+    height: 139px;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    top: 214px;
+    left: 0;
+    right: 0;
 }
 
 #login-text {
@@ -113,11 +96,11 @@ h3 {
 }
 
 #site-logo {
-
-  display:block;
-    margin:auto;
-  margin-top: 100px;
-  margin-bottom: 26px;
+  position: fixed;
+    margin: 5% auto;
+    top: 112px;
+    left: 0;
+    right: 0;
 }
 
 #username {

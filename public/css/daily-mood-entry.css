@@ -240,7 +240,7 @@ label > input:checked + img{
     text-align: center;
   }
 
-  .filled-in1 {
+  .filled-in {
     background-color: #F4775A;
     border: 1px solid white;
     height: 48px;
