@@ -79,12 +79,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			{{#each objects}}
 			{{#if taskStatus}}
 			<tr><td>
-				<a href="./issue/{{title}}"><div class="section-title" id="{{title}}">{{title}}</div></a>
-					<div class="task-complete">
-				<div class="text-area" id="addCSS">
-			        	<div class="mood-title">{{status}}</div>
-			        				</div>
-			        			</div>
+        <div href="./issue/{{title}}">
+  				<a href="./issue/{{title}}"><div class="section-title" id="{{title}}">{{title}}</div></a>
+  					<div class="task-complete">
+  				        <div class="text-area" id="addCSS">
+  			        	      <div class="mood-title">{{status}}</div>
+  			          </div>
+  			    </div>
+        </div>
   			</td></tr>
   			{{else}}
   			<tr><td>

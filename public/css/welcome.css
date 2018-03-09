@@ -33,6 +33,7 @@ h3 {
   margin-top: 500px;
   text-align: center;
 }
+
 .filled-in {
   background-color: #F4775A;
   border: 1px solid white;
@@ -42,6 +43,7 @@ h3 {
   color: white;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
