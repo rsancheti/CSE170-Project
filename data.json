@@ -108,7 +108,7 @@
         "title": "a",
         "status": "IN PROGRESS",
         "category": "food",
-        "description": "a",
+        "description": "",
         "duration": "",
         "relationship": "",
         "previous-steps": "",
@@ -118,7 +118,7 @@
                 "emoji": "Unhappy",
                 "month": 3,
                 "day": 8,
-                "comment": "a"
+                "comment": ""
             }
         ],
         "latestMood": "Unhappy",
